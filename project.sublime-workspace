@@ -1,0 +1,2339 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"colo",
+				"colorPickerColor"
+			],
+			[
+				"space",
+				"spaceOffset"
+			],
+			[
+				"spac",
+				"spaceOffset"
+			],
+			[
+				"mian",
+				"mainString"
+			],
+			[
+				"main",
+				"mainString"
+			],
+			[
+				"mai",
+				"mainString"
+			],
+			[
+				"cam",
+				"cameraAngle"
+			],
+			[
+				"camer",
+				"cameraPosition"
+			],
+			[
+				"poi",
+				"pointB"
+			],
+			[
+				"poin",
+				"pointA"
+			],
+			[
+				"Wall",
+				"WallNode"
+			],
+			[
+				"spli",
+				"splitter"
+			],
+			[
+				"new",
+				"newWallList"
+			],
+			[
+				"root",
+				"rootNode"
+			],
+			[
+				"wall",
+				"wall"
+			],
+			[
+				"roo",
+				"rootNode"
+			],
+			[
+				"spl",
+				"splitter"
+			],
+			[
+				"po",
+				"pointA"
+			],
+			[
+				"keys",
+				"keysym"
+			],
+			[
+				"add",
+				"additionalNodes"
+			],
+			[
+				"retu",
+				"return"
+			],
+			[
+				"vec",
+				"vector\tstd::vector"
+			],
+			[
+				"wal",
+				"wallList"
+			],
+			[
+				"wa",
+				"wallList"
+			],
+			[
+				"mouse",
+				"mouseY"
+			],
+			[
+				"mou",
+				"mouseX"
+			],
+			[
+				"di",
+				"displayWindow"
+			],
+			[
+				"getS",
+				"getScreenHeight"
+			],
+			[
+				"getScre",
+				"getScreenHeight"
+			],
+			[
+				"scree",
+				"getScreenHeight"
+			],
+			[
+				"sc",
+				"getScreenWidth"
+			],
+			[
+				"ca",
+				"cameraPosition"
+			],
+			[
+				"bott",
+				"bottom_right"
+			],
+			[
+				"draw",
+				"drawLine"
+			],
+			[
+				"top",
+				"top_right"
+			],
+			[
+				"bot",
+				"bottom_right"
+			],
+			[
+				"tem",
+				"tempY"
+			],
+			[
+				"temp",
+				"tempPosition"
+			],
+			[
+				"camera",
+				"cameraPosition"
+			],
+			[
+				"getSc",
+				"getScreenWidth"
+			],
+			[
+				"win",
+				"windowPosition"
+			],
+			[
+				"thir",
+				"thirdPerson"
+			],
+			[
+				"wind",
+				"windowPosition"
+			],
+			[
+				"windo",
+				"windowPosition"
+			],
+			[
+				"glP",
+				"glPopMatrix"
+			],
+			[
+				"thi",
+				"thirdPerson"
+			],
+			[
+				"thirdP",
+				"thirdPersonTranslated"
+			],
+			[
+				"sce",
+				"getScreenHeight"
+			],
+			[
+				"get",
+				"getScreenWidth"
+			],
+			[
+				"third",
+				"thirdPersonTransformed"
+			],
+			[
+				"wi",
+				"windowPosition"
+			],
+			[
+				"Vect",
+				"vector3"
+			],
+			[
+				"w",
+				"windowHeight"
+			],
+			[
+				"data",
+				"datasList"
+			],
+			[
+				"dat",
+				"datasList"
+			],
+			[
+				"check",
+				"checkCollision"
+			],
+			[
+				"reg",
+				"registers"
+			],
+			[
+				"rand",
+				"randData"
+			],
+			[
+				"val",
+				"validRegisterB"
+			],
+			[
+				"velo",
+				"velocityY"
+			],
+			[
+				"colorRe",
+				"colorRegisterSelected"
+			],
+			[
+				"colorR",
+				"colorRegisterSelected"
+			],
+			[
+				"re",
+				"region"
+			],
+			[
+				"SDL",
+				"SDLK_LEFT"
+			],
+			[
+				"el",
+				"elapsedTimeSeconds"
+			],
+			[
+				"ve",
+				"velocityX"
+			],
+			[
+				"v",
+				"v_position"
+			],
+			[
+				"regi",
+				"registerContainer"
+			],
+			[
+				"color",
+				"colorRegisterSelected"
+			],
+			[
+				"registerCo",
+				"registerContainer"
+			],
+			[
+				"int",
+				"internalMemory"
+			],
+			[
+				"shie",
+				"shield"
+			],
+			[
+				"heal",
+				"healthWidth"
+			],
+			[
+				"dept",
+				"depth_charge_level"
+			],
+			[
+				"dep",
+				"depth_charge_level"
+			],
+			[
+				"exp",
+				"explosionPosition"
+			],
+			[
+				"ex",
+				"explosionHeight"
+			],
+			[
+				"expl",
+				"explosionPosition"
+			],
+			[
+				"explosi",
+				"explosionWidth"
+			],
+			[
+				"depth",
+				"depthCharge"
+			],
+			[
+				"getRe",
+				"getRectangleIndexAddr"
+			],
+			[
+				"in",
+				"initializeDepthCharge"
+			],
+			[
+				"initia",
+				"initializeDepthCharge"
+			],
+			[
+				"rip",
+				"riptide"
+			],
+			[
+				"e",
+				"explosionWidth"
+			],
+			[
+				"coold",
+				"cooldownsParent"
+			],
+			[
+				"initial",
+				"initializeRiptide"
+			],
+			[
+				"health",
+				"healthLittleTickCount"
+			],
+			[
+				"healthL",
+				"healthLargeTickCount"
+			],
+			[
+				"col",
+				"colorStatusBarHealth"
+			],
+			[
+				"colorS",
+				"colorStatusBarBackground"
+			],
+			[
+				"Stat",
+				"StatusBar"
+			],
+			[
+				"stats",
+				"statusBar"
+			],
+			[
+				"titans",
+				"titans_wrath_level"
+			],
+			[
+				"beg",
+				"begin"
+			],
+			[
+				"tita",
+				"titans_wrath_level"
+			],
+			[
+				"damageA",
+				"damageAbilities"
+			],
+			[
+				"initi",
+				"initializeTitansWrath"
+			],
+			[
+				"aut",
+				"auto_attack_current_frame"
+			],
+			[
+				"dred",
+				"dredge_line_level"
+			],
+			[
+				"dis",
+				"damageDisplayMap"
+			],
+			[
+				"abi",
+				"abilityHeight"
+			],
+			[
+				"sele",
+				"selectedEntity"
+			],
+			[
+				"selec",
+				"selectedRectangleIndex"
+			],
+			[
+				"hea",
+				"health"
+			],
+			[
+				"hook",
+				"hookedPosition"
+			],
+			[
+				"hoo",
+				"hookedHeight"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"anc",
+				"anchor"
+			],
+			[
+				"move",
+				"movementY"
+			],
+			[
+				"anco",
+				"anchorWidth"
+			],
+			[
+				"ancho",
+				"anchorWidth"
+			],
+			[
+				"anch",
+				"anchorWidth"
+			],
+			[
+				"scro",
+				"scrollDown"
+			],
+			[
+				"rai",
+				"railList"
+			],
+			[
+				"rail",
+				"railList"
+			],
+			[
+				"board",
+				"boardWidth"
+			],
+			[
+				"track",
+				"trackEditor"
+			],
+			[
+				"tur",
+				"turnRight"
+			],
+			[
+				"turn",
+				"turnLeft"
+			],
+			[
+				"tuto",
+				"tutorialColor1"
+			],
+			[
+				"end",
+				"endNode"
+			],
+			[
+				"tutoria",
+				"tutorialState"
+			],
+			[
+				"rees",
+				"reset"
+			],
+			[
+				"tutorial",
+				"tutorialEnd"
+			],
+			[
+				"tut",
+				"inTutorial"
+			],
+			[
+				"getTur",
+				"getTurnRadius"
+			],
+			[
+				"left",
+				"leftTruck"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "project.sublime-project",
+			"settings":
+			{
+				"buffer_size": 161,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public_html/index.html",
+			"settings":
+			{
+				"buffer_size": 414,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public_html/src/engine.js",
+			"settings":
+			{
+				"buffer_size": 550,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Compile Client/Server",
+					""
+				],
+				[
+					"Compile Client/Server",
+					"Compile Client"
+				],
+				[
+					"Compile Client/Server",
+					"Compile Server"
+				],
+				[
+					"Compile Client/Server",
+					"Launch Client"
+				],
+				[
+					"Compile Client/Server",
+					"Launch Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Compile Client/Server",
+				"Launch Client"
+			]
+		],
+		[
+			[
+				[
+					"Mood",
+					""
+				],
+				[
+					"Mood",
+					"Compile Client"
+				],
+				[
+					"Mood",
+					"Compile Editor"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Mood",
+				"Compile Client"
+			]
+		],
+		[
+			[
+				[
+					"Mood",
+					""
+				],
+				[
+					"Mood",
+					"Compile Client"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Mood",
+				"Compile Client"
+			]
+		],
+		[
+			[
+				[
+					"Nautilus",
+					""
+				],
+				[
+					"Nautilus",
+					"Compile Client"
+				],
+				[
+					"Nautilus",
+					"Compile Server"
+				],
+				[
+					"Nautilus",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Nautilus",
+				"Compile Client"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Compile Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Compile Server"
+				],
+				[
+					"SDL Project",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				"Compile"
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"Compile"
+				],
+				[
+					"SDL Project",
+					"Run"
+				],
+				[
+					"SDL Project",
+					"Single File"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"SDL Project",
+				""
+			]
+		],
+		[
+			[
+				[
+					"SDL Project",
+					""
+				],
+				[
+					"SDL Project",
+					"gdb"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Java Compile.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Java Run.sublime-build",
+					""
+				]
+			],
+			[
+				"SDL Project",
+				"gdb"
+			]
+		],
+		[
+			[
+				[
+					"Thane",
+					""
+				],
+				[
+					"Thane",
+					"Compile Client"
+				],
+				[
+					"Thane",
+					"Compile Server"
+				],
+				[
+					"Thane",
+					"Compile Client/Server"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Thane",
+				"Compile Client/Server"
+			]
+		],
+		[
+			[
+				[
+					"Visual-Computer",
+					""
+				],
+				[
+					"Visual-Computer",
+					"Compile Client"
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Visual-Computer",
+				"Compile Client"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"browser",
+				"View In Browser"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"a",
+				"Arithmetic"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"ar",
+				"Arithmetic"
+			],
+			[
+				"ari",
+				"Arithmetic"
+			],
+			[
+				"convert",
+				"Convert Case: Upper Case"
+			],
+			[
+				"caps",
+				"Convert Case: Upper Case"
+			],
+			[
+				"colorsc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"Colorsublime: Browse Themes Online"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"colors",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"",
+				"BracketHighlighter: Enable Debug Mode"
+			],
+			[
+				"permu",
+				"Permute Lines: Unique"
+			],
+			[
+				"conver",
+				"Convert Case: Upper Case"
+			],
+			[
+				"convert to",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"SORT",
+				"Sort Lines"
+			],
+			[
+				"shuff",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"snippet",
+				"Snippet: template <typename ${1:_InputIter}>"
+			],
+			[
+				"font",
+				"Snippet: If Condition"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"perm",
+				"Snippet: Enumeration"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set syntax c++",
+				"Set Syntax: C++"
+			],
+			[
+				"set Syntax",
+				"Set Syntax: Textile"
+			],
+			[
+				"git",
+				"Set Syntax: Git Log"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"snipp",
+				"Snippet: Namespace"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"color s",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colorsch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"cololrs",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git pu",
+				"Git: Pull Using Rebase"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"hex",
+				"HexViewer: Toggle Hex View"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"git add all",
+				"Git: Add All"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"git commit ",
+				"Git: Commit"
+			],
+			[
+				"git commit me",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"git Co",
+				"Git: Commit"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packet rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"lint",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"g",
+				"GitGutter: Support Info"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"mat",
+				"Material Theme: Configuration"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"matr",
+				"Material Theme: Configuration"
+			]
+		],
+		"width": 420.0
+	},
+	"console":
+	{
+		"height": 826.0,
+		"history":
+		[
+			"trace",
+			"help",
+			"adf",
+			"std::string",
+			"<string>",
+			"help",
+			"cd..",
+			"move",
+			"wordCount",
+			"tree",
+			"trace",
+			"python",
+			"for (int x = 0; x > 10; x++)",
+			"sdt::",
+			"help",
+			"trace",
+			"gdb",
+			"rand()",
+			"rand",
+			"#import <stdlib.h>",
+			"git"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/Mood-Web",
+		"/C/Projects/Mood-Web/public_html",
+		"/C/Projects/Mood-Web/public_html/src"
+	],
+	"file_history":
+	[
+		"/C/Projects/Mood-Web/public_html/style.css",
+		"/C/Projects/Mood-Web/public_html/src/main.js",
+		"/C/Users/William/Desktop/Hellen Apply to these places NOW.txt",
+		"/C/Users/William/Desktop/yikes hellen",
+		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Projects/Mood-Web/public_html/main.js",
+		"/C/Projects/Mood-Web/public_html/site.css",
+		"/C/Projects/Mood-Web/public_html/main.javascript",
+		"/C/Projects/Mood-Web/store_hours.html",
+		"/C/Projects/Mood/project.sublime-project",
+		"/C/Projects/Mood/map.data",
+		"/C/Projects/Mood/color.data",
+		"/C/Projects/Mood/bsp_tree.data",
+		"/C/Libraries/glfw-3.2.1/docs/CMakeLists.txt",
+		"/C/Projects/Mood/src/third_person_bsp.cpp",
+		"/C/Projects/TestBed/2_29.cpp",
+		"/C/Projects/TestBed/lab1.cpp",
+		"/C/Projects/Mood/editor/src/joiner.h",
+		"/C/Projects/Mood/editor/src/vector2.cpp",
+		"/C/Projects/Mood/src/core/drawing.cpp",
+		"/C/Projects/Mood/src/joiner.cpp",
+		"/C/Projects/Mood/editor/src/joiner.cpp",
+		"/C/Projects/Mood/src/core/vector2.h",
+		"/C/Projects/Mood/src/core/drawing.h",
+		"/C/Projects/Mood/src/third_person.cpp",
+		"/C/Projects/Mood/src/first_person.cpp",
+		"/C/Projects/Mood/src/third_person_bsp.h",
+		"/C/Projects/Mood/engine.cpp",
+		"/C/Libraries/SOIL2/make/windows/Makefile",
+		"/C/Libraries/SOIL2/.hg_archival.txt",
+		"/C/Libraries/SOIL2/premake4.lua",
+		"/C/Libraries/glfw-3.2.1/bin/CMakeCache.txt",
+		"/C/Projects/Mood/src/first_person.h",
+		"/C/Projects/Mood/src/third_person_translated.cpp",
+		"/C/Projects/Mood/src/joiner.h",
+		"/C/Projects/Mood/src/third_person_translated.h",
+		"/C/Projects/Mood/src/wall.cpp",
+		"/C/Projects/Mood/src/wall.h",
+		"/C/Projects/Mood/engine.h",
+		"/C/Projects/Mood/editor/src/input.h",
+		"/C/Projects/Mood/editor/src/input.cpp",
+		"/C/Projects/Mood/editor/src/file.h",
+		"/C/Projects/Mood/editor/src/file.cpp",
+		"/C/Users/William/Desktop/test.py",
+		"/C/Users/William/Downloads/DebugExample.java",
+		"/C/Projects/Mood/editor/src/vector2.h",
+		"/C/Projects/Mood/src/core/vector2.cpp",
+		"/C/Projects/Mood/src/core/input.cpp",
+		"/C/Projects/Mood/src/core/input.h",
+		"/C/Projects/Mood/editor/main.cpp",
+		"/C/Projects/Mood/editor/src/wall.cpp",
+		"/C/Projects/Mood/editor/src/wall.h",
+		"/C/Projects/Mood/editor/src/drawing.cpp",
+		"/C/Projects/Mood/editor/src/drawing.h",
+		"/C/Users/William/Desktop/names of assholes",
+		"/C/Projects/Mood/src/core/file.cpp",
+		"/C/Projects/Mood/src/sample",
+		"/C/Projects/Help/CSC510_FINAL/GUI.java",
+		"/C/Projects/Help/CSC510_FINAL/Main.java",
+		"/C/Projects/Mood/src/core/file.h",
+		"/C/Projects/Mood/main.cpp",
+		"/C/Users/William/Desktop/homework_a.s",
+		"/C/Users/William/Desktop/homework_b.s",
+		"/C/Projects/Mood/src/core/configuration.cpp",
+		"/C/Projects/Mood/src/core/timer.h",
+		"/C/Projects/Mood/src/sample.bas",
+		"/C/Projects/Mood/src/third_person.h",
+		"/C/Projects/Mood/src/third_person_transformed.h",
+		"/C/Projects/Mood/src/third_person_transformed.cpp",
+		"/C/Projects/Visual-Computer/src/cpu.cpp",
+		"/C/Projects/Visual-Computer/src/core/drawing.cpp",
+		"/C/Projects/Visual-Computer/src/core/drawing.h",
+		"/C/Projects/Visual-Computer/src/cpu.h",
+		"/C/Projects/Visual-Computer/src/datas.h",
+		"/C/Projects/Visual-Computer/src/joiner.h",
+		"/C/Projects/Visual-Computer/src/joiner.cpp",
+		"/C/Projects/Visual-Computer/src/datas.cpp",
+		"/C/Projects/Visual-Computer/src/core/timer.cpp",
+		"/C/Projects/Visual-Computer/src/core/timer.h",
+		"/C/Projects/Visual-Computer/src/core/input.h",
+		"/C/Projects/Visual-Computer/src/core/input.cpp",
+		"/C/Projects/Visual-Computer/project.sublime-project",
+		"/C/Projects/Visual-Computer/engine.cpp",
+		"/C/Projects/Visual-Computer/engine.h",
+		"/C/Projects/Visual-Computer/main.cpp",
+		"/C/Projects/Visual-Computer/src/register_example.cpp",
+		"/C/Projects/Visual-Computer/src/register_example.h",
+		"/C/Projects/Visual-Computer/src/basic_computer.h",
+		"/C/Projects/Visual-Computer/src/basic_computer.cpp",
+		"/C/Projects/Visual-Computer/src/core/configuration.cpp",
+		"/C/Projects/Visual-Computer/config.txt",
+		"/C/Projects/Nautilus/src/rectangle_index.h",
+		"/C/Projects/Nautilus/src/core/input.h",
+		"/C/Projects/Nautilus/src/camera.h",
+		"/C/Projects/Nautilus/src/core/drawing.cpp",
+		"/C/Projects/Nautilus/src/core/drawing.h",
+		"/C/Projects/Nautilus/src/world.cpp",
+		"/C/Projects/Nautilus/src/stats.h",
+		"/C/Projects/Nautilus/src/stats.cpp",
+		"/C/Projects/Nautilus/src/dummy.cpp",
+		"/C/Projects/Nautilus/src/dummy.h",
+		"/C/Projects/Nautilus/src/nautilus.cpp",
+		"/C/Projects/Nautilus/src/rectangle_index.cpp",
+		"/C/Projects/Nautilus/src/nautilus.h",
+		"/C/Projects/Nautilus/src/world.h",
+		"/C/Projects/Nautilus/project.sublime-project",
+		"/C/Projects/Nautilus/src/wall.h",
+		"/C/Projects/Nautilus/src/wall.cpp",
+		"/C/Projects/Nautilus/engine.cpp",
+		"/C/Projects/Nautilus/src/core/vector2.cpp",
+		"/C/Projects/Nautilus/src/core/vector2.h",
+		"/C/Projects/Nautilus/src/joiner.cpp",
+		"/C/Projects/Nautilus/src/gui.cpp",
+		"/C/Projects/Nautilus/src/gui.h",
+		"/C/Projects/Nautilus/src/joiner.h",
+		"/C/Projects/Nautilus/src/core/configuration.h",
+		"/C/Projects/Nautilus/src/melee_minion.h",
+		"/C/Projects/Nautilus/src/core/input.cpp",
+		"/C/Projects/Nautilus/engine.h",
+		"/C/Projects/Nautilus/config.txt",
+		"/C/Projects/Nautilus/src/core/gui.cpp",
+		"/C/Projects/Thane/src/joiner.h",
+		"/C/Projects/Thane/src/joiner.cpp",
+		"/C/Projects/Nautilus/main.cpp",
+		"/C/Projects/Thane/main.cpp",
+		"/C/Projects/Thane/engine.h",
+		"/C/Projects/Thane/engine.cpp"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 172.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"swap",
+			"matrix"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "project.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public_html/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								414,
+								414
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										200,
+										206
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										173,
+										179
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										210,
+										214
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										17,
+										21
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public_html/src/engine.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 210.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 61.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pr",
+				"project.sublime-project"
+			],
+			[
+				"vect",
+				"src\\core\\vector2.h"
+			],
+			[
+				"en",
+				"engine.cpp"
+			],
+			[
+				"main",
+				"main.cpp"
+			],
+			[
+				"pro",
+				"project.sublime-project"
+			],
+			[
+				"tree",
+				"bsp_tree.data"
+			],
+			[
+				"colo",
+				"color.data"
+			],
+			[
+				".da",
+				"map.data"
+			],
+			[
+				"joi",
+				"editor\\src\\joiner.cpp"
+			],
+			[
+				"thir",
+				"src\\third_person_bsp.cpp"
+			],
+			[
+				"vec",
+				"editor\\src\\vector2.cpp"
+			],
+			[
+				"draw",
+				"src\\core\\drawing.cpp"
+			],
+			[
+				"",
+				"editor\\src\\joiner.cpp"
+			],
+			[
+				"jo",
+				"src\\joiner.cpp"
+			],
+			[
+				"first",
+				"src\\first_person.cpp"
+			],
+			[
+				"eng",
+				"engine.cpp"
+			],
+			[
+				"j",
+				"editor\\src\\joiner.cpp"
+			],
+			[
+				"th",
+				"src\\third_person.cpp"
+			],
+			[
+				"fi",
+				"src\\first_person.cpp"
+			],
+			[
+				"fir",
+				"src\\first_person.cpp"
+			],
+			[
+				"third",
+				"src\\third_person_translated.cpp"
+			],
+			[
+				"firs",
+				"src\\first_person.h"
+			],
+			[
+				"thi",
+				"src\\third_person_translated.cpp"
+			],
+			[
+				"join",
+				"editor\\src\\joiner.cpp"
+			],
+			[
+				"w",
+				"src\\wall.cpp"
+			],
+			[
+				"proj",
+				"project.sublime-project"
+			],
+			[
+				"wa",
+				"src\\wall.h"
+			],
+			[
+				"wall",
+				"src\\wall.h"
+			],
+			[
+				"inp",
+				"editor\\src\\input.h"
+			],
+			[
+				"ve",
+				"editor\\src\\vector2.cpp"
+			],
+			[
+				"in",
+				"editor\\src\\input.h"
+			],
+			[
+				"mai",
+				"editor\\main.cpp"
+			],
+			[
+				"fil",
+				"src\\core\\file.cpp"
+			],
+			[
+				"dr",
+				"src\\core\\drawing.cpp"
+			],
+			[
+				"p",
+				"project.sublime-project"
+			],
+			[
+				"engi",
+				"engine.cpp"
+			],
+			[
+				"ma",
+				"main.cpp"
+			],
+			[
+				"da",
+				"map.data"
+			],
+			[
+				"sa",
+				"src\\sample"
+			],
+			[
+				"timer",
+				"src\\core\\timer.h"
+			],
+			[
+				"con",
+				"src\\core\\configuration.cpp"
+			],
+			[
+				"wal",
+				"src\\wall.h"
+			],
+			[
+				"thirdP",
+				"src\\third_person_translated.h"
+			],
+			[
+				"dra",
+				"src\\core\\drawing.h"
+			],
+			[
+				"e",
+				"engine.cpp"
+			],
+			[
+				"data",
+				"src\\datas.h"
+			],
+			[
+				"cp",
+				"src\\cpu.h"
+			],
+			[
+				"cpu.cp",
+				"src\\cpu.cpp"
+			],
+			[
+				"ti",
+				"src\\core\\timer.h"
+			],
+			[
+				"cpu",
+				"src\\cpu.cpp"
+			],
+			[
+				"drw",
+				"src\\core\\drawing.h"
+			],
+			[
+				"confi",
+				"src\\core\\configuration.cpp"
+			],
+			[
+				"nau",
+				"src\\nautilus.h"
+			],
+			[
+				"na",
+				"src\\nautilus.h"
+			],
+			[
+				"dumm",
+				"src\\dummy.h"
+			],
+			[
+				"re",
+				"src\\rectangle_index.h"
+			],
+			[
+				"du",
+				"src\\dummy.h"
+			],
+			[
+				"sta",
+				"src\\stats.cpp"
+			],
+			[
+				"stat",
+				"src\\stats.cpp"
+			],
+			[
+				"wo",
+				"src\\world.cpp"
+			],
+			[
+				"i",
+				"src\\core\\input.h"
+			],
+			[
+				"ca",
+				"src\\camera.h"
+			],
+			[
+				"n",
+				"src\\nautilus.cpp"
+			],
+			[
+				"recta",
+				"src\\rectangle_index.h"
+			],
+			[
+				"world",
+				"src\\world.cpp"
+			],
+			[
+				"wor",
+				"src\\world.cpp"
+			],
+			[
+				"naut",
+				"src\\nautilus.h"
+			],
+			[
+				"gui",
+				"src\\gui.cpp"
+			],
+			[
+				"rect",
+				"src\\rectangle_index.cpp"
+			],
+			[
+				"conf",
+				"src\\core\\configuration.h"
+			],
+			[
+				"cm",
+				"src\\camera.h"
+			],
+			[
+				"boar",
+				"src\\board\\board.h"
+			],
+			[
+				"board",
+				"src\\board\\board.cpp"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"config",
+				"src\\core\\configuration.h"
+			],
+			[
+				"camer",
+				"src\\camera.h"
+			],
+			[
+				"inpu",
+				"src\\core\\input.cpp"
+			],
+			[
+				"track",
+				"src\\track\\track_editor.cpp"
+			],
+			[
+				"tracke",
+				"src\\track\\track_editor.h"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"prof",
+				"src\\board\\profile.h"
+			],
+			[
+				"wheel",
+				"src\\board\\wheel_presets.h"
+			],
+			[
+				"profi",
+				"src\\board\\profile.h"
+			],
+			[
+				"whee",
+				"src\\board\\wheel.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 1000.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Projects\\Objective-Neural-Network\\project.sublime-project"
+			]
+		],
+		"width": 760.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 138.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

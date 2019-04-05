@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
+// scp wlew@csc412sfsu.com:/home/wlew/public_html/* public_html
+// scp -r public_html wlew@csc412sfsu.com:/home/wlew

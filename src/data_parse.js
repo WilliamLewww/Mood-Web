@@ -4,10 +4,10 @@ var position = 0;
 function getVerticesFromID(ID) {
 	var data = document.getElementById(ID).innerHTML.split(' ');
 	var vertices = [];
-	var vertex = [parseInt(data[0])];
+	var vertex = [parseFloat(data[0])];
 
 	for (var x = 1; x < data.length; x++) {
-		vertex.push(parseInt(data[x]));
+		vertex.push(parseFloat(data[x]));
 
 		if (x % 2 == 1) {
 			vertices.push(vertex);
@@ -16,6 +16,17 @@ function getVerticesFromID(ID) {
 	}
 
 	return vertices;
+}
+
+function getColorFromID(ID) {
+	var data = document.getElementById(ID).innerHTML.split(' ');
+	var colors = [];
+
+	data.forEach(color => {
+		colors.push(parseFloat(color));
+	});
+
+	return colors;
 }
 
 function printBinaryTree(tree) {
@@ -64,17 +75,17 @@ function readBinaryTreeToken(node, data) {
 	else {
 		var pointAS = token.split('|')[0];
 		pointAS = pointAS.split(',');
-		var pointA = [parseInt(pointAS[0]), parseInt(pointAS[1])];
+		var pointA = [parseFloat(pointAS[0]), parseFloat(pointAS[1])];
 		token = token.split('|')[1];
 
 		var pointBS = token.split(':')[0];
 		pointBS = pointBS.split(',');
-		var pointB = [parseInt(pointBS[0]), parseInt(pointBS[1])]; 
+		var pointB = [parseFloat(pointBS[0]), parseFloat(pointBS[1])]; 
 		token = token.split(':')[1];
 
 		token = token.split(',');
 
-		var wall = new Wall(pointA, pointB, [parseInt(token[0]), parseInt(token[1]), parseInt(token[2])]);
+		var wall = new Wall(pointA, pointB, [parseFloat(token[0]), parseFloat(token[1]), parseFloat(token[2])]);
 		node = new WallNode(wall);
 
 		node.left = readBinaryTreeToken(node.left, data, position);

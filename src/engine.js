@@ -1,11 +1,15 @@
 var gl;
 var programList = [];
+var joiner;
 
 function initialize() {
   var canvas = document.getElementById("glCanvas");
   gl = canvas.getContext("experimental-webgl");
 
   programList.push(createProgram(VERTEX_SHADER_SOURCE, FRAGMENT_SHADER_SOURCE));
+
+  joiner = new Joiner();
+  joiner.initialize();
 
   gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
   mainLoop();
@@ -18,12 +22,13 @@ function mainLoop() {
 }
 
 function update() {
-
+  joiner.update();
 }
 
 function draw() {
   gl.clearColor(0.0, 0.0, 0.0, 1.0);
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  joiner.draw();
 }
 
 function createProgram(vertexSource, fragmentSource) {

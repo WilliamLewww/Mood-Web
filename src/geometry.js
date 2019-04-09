@@ -12,7 +12,7 @@ function Line(pointA, pointB, color = [1,0,0,1]) {
 
 	this.positionBuffer = gl.createBuffer();
 
-	this.draw = function() {
+	this.draw = () => {
 		gl.useProgram(this.program);
 		gl.enableVertexAttribArray(this.positionAttributeLocation);
 		gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
@@ -25,7 +25,7 @@ function Line(pointA, pointB, color = [1,0,0,1]) {
 		gl.drawArrays(gl.LINES, 0, 2);
 	}
 
-	this.getPositionArray = function() {
+	this.getPositionArray = () => {
 		return [
 			this.x1, this.y1,
 			this.x2, this.y2,
@@ -47,7 +47,7 @@ function Rectangle(x, y, width, height, color = [1,0,0,1]) {
 
 	this.positionBuffer = gl.createBuffer();
 
-	this.draw = function() {
+	this.draw = () => {
 		gl.useProgram(this.program);
 		gl.enableVertexAttribArray(this.positionAttributeLocation);
 		gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
@@ -60,7 +60,7 @@ function Rectangle(x, y, width, height, color = [1,0,0,1]) {
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
 
-	this.getPositionArray = function() {
+	this.getPositionArray = () => {
 		return [
 			this.x, this.y,
 			this.x + this.width, this.y,

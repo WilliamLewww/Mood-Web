@@ -5,3 +5,7 @@ canvas {
     margin-right: auto;
     display: block;
 }
+
+.hidden-data {
+	visibility: hidden;
+}

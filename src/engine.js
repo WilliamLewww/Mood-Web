@@ -2,9 +2,17 @@ var gl;
 var programList = [];
 var joiner;
 
+var SCREEN_WIDTH;
+var SCREEN_HEIGHT;
+
 function initialize() {
   var canvas = document.getElementById("glCanvas");
   gl = canvas.getContext("experimental-webgl");
+
+  SCREEN_WIDTH = gl.canvas.width;
+  SCREEN_HEIGHT = gl.canvas.height;
+
+  createListeners();
 
   programList.push(createProgram(VERTEX_SHADER_SOURCE, FRAGMENT_SHADER_SOURCE));
 
@@ -46,4 +54,20 @@ function createProgram(vertexSource, fragmentSource) {
   gl.linkProgram(program);
 
   return program;
+}
+
+var input_list = [];
+function createListeners() {
+  document.addEventListener('keydown', event => {
+    if ([32, 37, 38, 39, 40].indexOf(event.keyCode) != -1) {
+      event.preventDefault();
+    }
+    if (input_list.indexOf(event.keyCode) == -1) {
+      input_list.push(event.keyCode);
+    }
+  });
+
+  document.addEventListener('keyup', event => {
+    input_list.splice(input_list.indexOf(event.keyCode), 1);
+  });
 }

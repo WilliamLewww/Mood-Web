@@ -4,6 +4,8 @@ function Line(pointA, pointB, color = [1,0,0,1]) {
 	this.x2 = pointB[0];
 	this.y2 = pointB[1];
 
+	this.color = color;
+
 	this.program = programList[0];
 
 	this.positionAttributeLocation = gl.getAttribLocation(this.program, 'position');

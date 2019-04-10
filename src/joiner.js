@@ -15,15 +15,29 @@ function Joiner() {
 		}
 
 		this.cameraPosition = [50, 50];
-		this.cameraAngle = 0;
+		this.cameraAngle = [0];
+		this.cameraProperties = [this.cameraPosition, this.cameraAngle];
+
+		this.firstPerson = new FirstPerson(this.cameraProperties);
+		this.firstPerson.initialize(85);
 	}
 
 	this.update = () => {
+		if (input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) { this.cameraAngle[0] += 1; }
+		if (input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) { this.cameraAngle[0] -= 1; }
+		if (input_list.indexOf(38) != -1 && input_list.indexOf(40) == -1) {
+			this.cameraPosition[0] += Math.cos(degreeToRadians(-this.cameraAngle[0]));
+			this.cameraPosition[1] += Math.sin(degreeToRadians(-this.cameraAngle[0]));
+		}
+		if (input_list.indexOf(40) != -1 && input_list.indexOf(38) == -1) {
+			this.cameraPosition[0] -= Math.cos(degreeToRadians(-this.cameraAngle[0]));
+			this.cameraPosition[1] -= Math.sin(degreeToRadians(-this.cameraAngle[0]));
+		}
 
 	}
 
 	this.draw = () => {
-	
+		this.firstPerson.draw(this.wallArray);
 	}
 }
 

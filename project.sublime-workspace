@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"Wa",
+				"wallArray"
+			],
+			[
+				"poin",
+				"pointB\t(joiner.js)"
+			],
+			[
+				"poi",
+				"pointA\t(joiner.js)"
+			],
+			[
+				"cam",
+				"cameraProperties"
+			],
+			[
+				"camer",
+				"cameraAngle"
+			],
+			[
+				"camera",
+				"cameraProperties\t(first_person.js)"
+			],
+			[
 				"colo",
 				"colorIndex"
 			],
@@ -24,10 +48,6 @@
 				"positionList"
 			],
 			[
-				"poi",
-				"pointA"
-			],
-			[
 				"spl",
 				"splitter"
 			],
@@ -46,10 +66,6 @@
 			[
 				"spli",
 				"split"
-			],
-			[
-				"poin",
-				"pointA"
 			],
 			[
 				"point",
@@ -122,14 +138,6 @@
 			[
 				"mai",
 				"mainString"
-			],
-			[
-				"cam",
-				"cameraAngle"
-			],
-			[
-				"camer",
-				"cameraPosition"
 			],
 			[
 				"Wall",
@@ -230,10 +238,6 @@
 			[
 				"temp",
 				"tempPosition"
-			],
-			[
-				"camera",
-				"cameraPosition"
 			],
 			[
 				"getSc",
@@ -510,10 +514,6 @@
 			[
 				"move",
 				"movementY"
-			],
-			[
-				"anco",
-				"anchorWidth"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/engine.js",
 			"settings":
 			{
-				"buffer_size": 1143,
+				"buffer_size": 1406,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,16 @@
 			"file": "src/joiner.js",
 			"settings":
 			{
-				"buffer_size": 1040,
+				"buffer_size": 1208,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/first_person.js",
+			"settings":
+			{
+				"buffer_size": 2165,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -542,7 +551,6 @@
 			"settings":
 			{
 				"buffer_size": 2237,
-				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -553,6 +561,15 @@
 				"buffer_size": 2484,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 10870,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -1339,6 +1356,9 @@
 	"file_history":
 	[
 		"/C/Users/William/.software/CodeTime.txt",
+		"/C/Projects/Mood-Web/src/geometry.js",
+		"/C/Users/William/Downloads/dyArray.h",
+		"/C/Users/William/Downloads/dyArray-main.cpp",
 		"/C/Projects/Mood-Web/index.html",
 		"/C/Projects/Mood-Web/src/shader_source.js",
 		"/C/Projects/Mood-Web/src/data_parse.js",
@@ -1462,10 +1482,7 @@
 		"/C/Projects/Nautilus/src/wall.h",
 		"/C/Projects/Nautilus/src/wall.cpp",
 		"/C/Projects/Nautilus/engine.cpp",
-		"/C/Projects/Nautilus/src/core/vector2.cpp",
-		"/C/Projects/Nautilus/src/core/vector2.h",
-		"/C/Projects/Nautilus/src/joiner.cpp",
-		"/C/Projects/Nautilus/src/gui.cpp"
+		"/C/Projects/Nautilus/src/core/vector2.cpp"
 	],
 	"find":
 	{
@@ -1519,15 +1536,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1143,
+						"buffer_size": 1406,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								249,
-								249
+								1272,
+								1272
 							]
 						],
 						"settings":
@@ -1549,15 +1566,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1040,
+						"buffer_size": 1208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								515,
-								515
+								786,
+								786
 							]
 						],
 						"settings":
@@ -1565,15 +1582,43 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 1.0,
+						"translation.y": 89.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "src/first_person.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1361,
+								1361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "src/geometry.js",
 					"semi_transient": false,
 					"settings":
@@ -1585,8 +1630,8 @@
 						"selection":
 						[
 							[
-								2237,
-								2237
+								1625,
+								1625
 							]
 						],
 						"settings":
@@ -1595,20 +1640,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 404.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "src/data_parse.js",
 					"semi_transient": false,
 					"settings":
@@ -1620,8 +1659,8 @@
 						"selection":
 						[
 							[
-								73,
-								73
+								316,
+								316
 							]
 						],
 						"settings":
@@ -1633,7 +1672,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10528,
+								10528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3444.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1656,18 +1725,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1702,6 +1764,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ge",
+				"src\\geometry.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
 			[
 				"sha",
 				"src\\shader_source.js"
@@ -1841,10 +1911,6 @@
 			[
 				"ve",
 				"editor\\src\\vector2.cpp"
-			],
-			[
-				"in",
-				"editor\\src\\input.h"
 			],
 			[
 				"mai",

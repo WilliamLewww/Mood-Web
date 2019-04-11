@@ -1,4 +1,4 @@
-const VERTEX_SHADER_1 = [
+const VERTEX_SHADER_SOURCE = [
 'attribute vec2 position;								 											\n',
 '														 											\n',
 'uniform vec2 resolution;								 											\n',
@@ -12,7 +12,7 @@ const VERTEX_SHADER_1 = [
 '}														 											\n',
 ].join('');
 
-const FRAGMENT_SHADER_1 = [
+const FRAGMENT_SHADER_SOURCE = [
 'precision mediump float;									\n',
 '															\n',
 'uniform vec4 color;										\n',

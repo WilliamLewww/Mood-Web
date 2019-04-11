@@ -14,7 +14,7 @@ function initialize() {
 
   createListeners();
 
-  programList.push(createProgram(VERTEX_SHADER_1, FRAGMENT_SHADER_1));
+  programList.push(createProgram(VERTEX_SHADER_SOURCE, FRAGMENT_SHADER_SOURCE));
 
   joiner = new Joiner();
   joiner.initialize();

@@ -9,3 +9,11 @@ canvas {
 .hidden-data {
 	visibility: hidden;
 }
+
+mark.green {
+	background-color: #00FF00;
+}
+
+mark.red {
+	background-color: #FF0000;
+}

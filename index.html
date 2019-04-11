@@ -5,16 +5,18 @@
     <title>Binary Space Partitioning</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body onload="initialize()">
+<body class="background-color" onload="initialize()">
 	<canvas id="glCanvas" width="1000" height="600">
         Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
     </canvas>
     <p class="title-text">Binary Space Partitioning Demonstration</p>
-    <p><mark id="indicator-move" class="red">Arrow Keys</mark> - Move</p>
-    <p><mark class="green">Spacebar</mark> - Toggle Drawing Method || <mark id="indicator-method-bsp" class="green">BSP</mark> <mark id="indicator-method-first" class="red">First-to-Last</mark> <mark id="indicator-method-last" class="red">Last-to-First</mark></p>
-    <p><mark id="indicator-solid" class="red">z</mark> - Toggle Wireframe</p>
-    <p><mark id="indicator-order" class="red">x</mark> - Toggle Max-Alpha Draw Order || <mark id="indicator-order-first" class="red">First</mark> <mark id="indicator-order-last" class="red">Last</mark></p>
-    <p><mark id="indicator-print-bsp" class="red">Enter</mark> - Print BSP Tree to Console</p>
+    <div class="instruction-box">
+    <p class="instruction-text"><mark id="indicator-move" class="red">Arrow Keys</mark> - Move</p>
+    <p class="instruction-text"><mark class="green">Spacebar</mark> - Toggle Drawing Method || <mark id="indicator-method-bsp" class="green">BSP</mark> <mark id="indicator-method-first" class="red">First-to-Last</mark> <mark id="indicator-method-last" class="red">Last-to-First</mark></p>
+    <p class="instruction-text"><mark id="indicator-solid" class="red">z</mark> - Toggle Wireframe</p>
+    <p class="instruction-text"><mark id="indicator-order" class="red">x</mark> - Toggle Max-Alpha Draw Order || <mark id="indicator-order-first" class="red">First</mark> <mark id="indicator-order-last" class="red">Last</mark></p>
+    <p class="instruction-text"><mark id="indicator-print-bsp" class="red">Enter</mark> - Print BSP Tree to Console</p>
+    </div>
     <script src="src/engine.js"></script>
     <script src="src/shader_source.js"></script>
     <script src="src/geometry.js"></script>

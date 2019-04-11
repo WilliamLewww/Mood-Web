@@ -10,11 +10,27 @@ canvas {
 	visibility: hidden;
 }
 
+.background-color {
+	background-color: #6495ED;
+}
+
 .title-text {
 	font-size: 24px;
 	text-align: center;
 	border-width: 5px;
 	border-style: inset;
+	background-color: #c9dcff ;
+}
+
+.instruction-box {
+	border-style: ridge;
+	border-width: 8px;
+	margin-top: -10px;
+	background-color: #c9dcff ;
+}
+
+.instruction-text {
+	padding-left: 10px;
 }
 
 mark.green {

@@ -1,11 +1,12 @@
 var canPrintTree = true;
-var toggleDrawMethod = true;
-var canToggleDrawMethod = true;
 var toggleDrawSolid = true;
 var canToggleDrawSolid = true;
 
 var toggleDrawOrder = 0;
 var canToggleDrawOrder = true;
+
+var toggleDrawMethod = 0;
+var canToggleDrawMethod = true;
 
 function Joiner() {
 	this.initialize = () => {
@@ -54,9 +55,25 @@ function Joiner() {
 			document.getElementById('indicator-print-bsp').setAttribute('class', 'green');
 		}
 		if (canToggleDrawMethod && input_list.indexOf(32) != -1) {
-			toggleDrawMethod = !toggleDrawMethod;
-			if (toggleDrawMethod == true) { document.getElementById('indicator-bsp').setAttribute('class', 'green'); }
-			else { document.getElementById('indicator-bsp').setAttribute('class', 'red'); }
+			if (toggleDrawMethod == 0) {
+				toggleDrawMethod += 1;
+				document.getElementById('indicator-method-bsp').setAttribute('class', 'red');
+				document.getElementById('indicator-method-first').setAttribute('class', 'green');
+			}
+			else {
+				if (toggleDrawMethod == 1) {
+					toggleDrawMethod += 1;
+					document.getElementById('indicator-method-first').setAttribute('class', 'red');
+					document.getElementById('indicator-method-last').setAttribute('class', 'green');
+				}
+				else { 
+					if (toggleDrawMethod == 2) {
+						toggleDrawMethod = 0;
+						document.getElementById('indicator-method-last').setAttribute('class', 'red');
+						document.getElementById('indicator-method-bsp').setAttribute('class', 'green');
+					}
+				}
+			}
 			canToggleDrawMethod = false;
 		}
 		if (!canToggleDrawMethod && input_list.indexOf(32) == -1) { canToggleDrawMethod = true; }
@@ -95,8 +112,9 @@ function Joiner() {
 	}
 
 	this.draw = () => {
-		if (toggleDrawMethod) { this.firstPerson.drawUsingBSP(this.tree); }
-		else { this.firstPerson.draw(this.wallArray); }
+		if (toggleDrawMethod == 0) { this.firstPerson.drawUsingBSP(this.tree); }
+		if (toggleDrawMethod == 1) { this.firstPerson.drawFirstToLast(this.wallArray); }
+		if (toggleDrawMethod == 2) { this.firstPerson.drawLastToFirst(this.wallArray); }
 	}
 }
 

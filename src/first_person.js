@@ -20,10 +20,18 @@ function FirstPerson(cameraProperties) {
 		this.wallBufferTree[node.id] = new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1], node.splitter.color)
 	}
 
-	this.draw = (wallArray) => {
+	this.drawFirstToLast = (wallArray) => {
 		if (toggleDrawOrder == 1) { currentAlpha = 255; }
 		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = 0; x < wallArray.length; x++) {
+			this.drawWall(wallArray[x], this.wallBuffer, x);
+		}
+	}
+
+	this.drawLastToFirst = (wallArray) => {
+		if (toggleDrawOrder == 1) { currentAlpha = 255; }
+		if (toggleDrawOrder == 2) { currentAlpha = 0; }
+		for (var x = wallArray.length - 1; x >= 0; x--) {
 			this.drawWall(wallArray[x], this.wallBuffer, x);
 		}
 	}

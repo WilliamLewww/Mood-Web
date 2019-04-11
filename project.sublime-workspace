@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"camer",
+				"cameraAngle"
+			],
+			[
+				"index",
+				"indexOf\t(engine.js)"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"SCR",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"Sc",
+				"SCREEN_HEIGHT\t(engine.js)"
+			],
+			[
+				"wall",
+				"wallBuffer"
+			],
+			[
+				"poi",
+				"pointB"
+			],
+			[
 				"Wa",
 				"wallArray"
 			],
@@ -12,16 +44,8 @@
 				"pointB\t(joiner.js)"
 			],
 			[
-				"poi",
-				"pointA\t(joiner.js)"
-			],
-			[
 				"cam",
 				"cameraProperties"
-			],
-			[
-				"camer",
-				"cameraAngle"
 			],
 			[
 				"camera",
@@ -34,10 +58,6 @@
 			[
 				"col",
 				"colorIndex"
-			],
-			[
-				"wall",
-				"wallArray"
 			],
 			[
 				"color",
@@ -494,26 +514,6 @@
 			[
 				"hea",
 				"health"
-			],
-			[
-				"hook",
-				"hookedPosition"
-			],
-			[
-				"hoo",
-				"hookedHeight"
-			],
-			[
-				"he",
-				"height"
-			],
-			[
-				"anc",
-				"anchor"
-			],
-			[
-				"move",
-				"movementY"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/engine.js",
 			"settings":
 			{
-				"buffer_size": 1406,
+				"buffer_size": 1671,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "src/joiner.js",
 			"settings":
 			{
-				"buffer_size": 1208,
+				"buffer_size": 1916,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +541,7 @@
 			"file": "src/first_person.js",
 			"settings":
 			{
-				"buffer_size": 2165,
+				"buffer_size": 2575,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,7 +550,17 @@
 			"file": "src/geometry.js",
 			"settings":
 			{
-				"buffer_size": 2237,
+				"buffer_size": 2423,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/shader_source.js",
+			"settings":
+			{
+				"buffer_size": 855,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -1486,7 +1496,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -1501,6 +1511,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"wallBuffer",
+			"wallDrawObject",
 			"'",
 			"int",
 			"positionList",
@@ -1527,7 +1539,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1536,15 +1548,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1406,
+						"buffer_size": 1671,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1272,
-								1272
+								774,
+								776
 							]
 						],
 						"settings":
@@ -1554,10 +1566,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1566,15 +1578,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1208,
+						"buffer_size": 1916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								786,
-								786
+								753,
+								753
 							]
 						],
 						"settings":
@@ -1582,11 +1594,11 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 1.0,
-						"translation.y": 89.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1595,15 +1607,73 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2165,
+						"buffer_size": 2575,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1361,
-								1361
+								1629,
+								1629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/geometry.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								977,
+								977
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/shader_source.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								784,
+								784
 							]
 						],
 						"settings":
@@ -1618,36 +1688,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/geometry.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2237,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1625,
-								1625
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 404.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "src/data_parse.js",
 					"semi_transient": false,
 					"settings":
@@ -1672,11 +1713,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -1699,10 +1740,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3444.0,
+						"translation.y": 649.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1765,16 +1806,16 @@
 		"selected_items":
 		[
 			[
+				"sha",
+				"src\\shader_source.js"
+			],
+			[
 				"ge",
 				"src\\geometry.js"
 			],
 			[
 				"in",
 				"index.html"
-			],
-			[
-				"sha",
-				"src\\shader_source.js"
 			],
 			[
 				"inde",

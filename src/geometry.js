@@ -1,4 +1,8 @@
-function Line(pointA, pointB, color = [1,0,0,1]) {
+function denormalizeColor(color) {
+	return [color[0] / 255.0, color[1] / 255.0, color[2] / 255.0, color[3] / 255.0];
+}
+
+function Line(pointA, pointB, color = [255,0,0,255]) {
 	this.x1 = pointA[0];
 	this.y1 = pointA[1];
 	this.x2 = pointB[0];
@@ -21,7 +25,7 @@ function Line(pointA, pointB, color = [1,0,0,1]) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
-		gl.uniform4fv(this.colorLocation, color);
+		gl.uniform4fv(this.colorLocation, denormalizeColor(color));
 		gl.drawArrays(gl.LINES, 0, 2);
 	}
 
@@ -33,7 +37,7 @@ function Line(pointA, pointB, color = [1,0,0,1]) {
 	}
 }
 
-function Rectangle(x, y, width, height, color = [1,0,0,1]) {
+function Rectangle(x, y, width, height, color = [255,0,0,255]) {
 	this.x = x;
 	this.y = y;
 	this.width = width;
@@ -54,7 +58,7 @@ function Rectangle(x, y, width, height, color = [1,0,0,1]) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
-		gl.uniform4fv(this.colorLocation, color);
+		gl.uniform4fv(this.colorLocation, denormalizeColor(color));
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
 

@@ -4,6 +4,9 @@ var canToggleDrawMethod = true;
 var toggleDrawSolid = true;
 var canToggleDrawSolid = true;
 
+var toggleDrawOrder = 0;
+var canToggleDrawOrder = true;
+
 function Joiner() {
 	this.initialize = () => {
 		this.positionList = getVerticesFromID('map-data');
@@ -65,6 +68,30 @@ function Joiner() {
 			canToggleDrawSolid = false;
 		}
 		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }
+
+		if (canToggleDrawOrder && input_list.indexOf(88) != -1) {
+			if (toggleDrawOrder == 0) {
+				toggleDrawOrder += 1;
+				document.getElementById('indicator-order').setAttribute('class', 'green');
+				document.getElementById('indicator-order-first').setAttribute('class', 'green');
+			}
+			else {
+				if (toggleDrawOrder == 1) {
+					toggleDrawOrder += 1;
+					document.getElementById('indicator-order-first').setAttribute('class', 'red');
+					document.getElementById('indicator-order-last').setAttribute('class', 'green');
+				}
+				else { 
+					if (toggleDrawOrder == 2) {
+						toggleDrawOrder = 0;
+						document.getElementById('indicator-order').setAttribute('class', 'red');
+						document.getElementById('indicator-order-last').setAttribute('class', 'red');
+					}
+				}
+			}
+			canToggleDrawOrder = false;
+		}
+		if (!canToggleDrawOrder && input_list.indexOf(88) == -1) { canToggleDrawOrder = true; }
 	}
 
 	this.draw = () => {

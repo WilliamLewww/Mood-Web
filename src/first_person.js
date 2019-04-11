@@ -1,3 +1,5 @@
+var currentAlpha = 0;
+
 function FirstPerson(cameraProperties) {
 	this.cameraProperties = cameraProperties;
 
@@ -19,6 +21,8 @@ function FirstPerson(cameraProperties) {
 	}
 
 	this.draw = (wallArray) => {
+		if (toggleDrawOrder == 1) { currentAlpha = 255; }
+		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = 0; x < wallArray.length; x++) {
 			this.drawWall(wallArray[x], this.wallBuffer, x);
 		}
@@ -69,12 +73,17 @@ function FirstPerson(cameraProperties) {
 			buffer[index].pointB = [x2,y2a];
 			buffer[index].pointC = [x2,y2b];
 			buffer[index].pointD = [x1,y1b];
+			if (toggleDrawOrder == 0) { buffer[index].color[3] = 255; }
+			if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= 1; }
+			if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += 1; }
 			if (toggleDrawSolid) { buffer[index].draw(); }
 			else { buffer[index].drawWire(); }
 		}
 	}
 
 	this.drawUsingBSP = (root) => {
+		if (toggleDrawOrder == 1) { currentAlpha = 255; }
+		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		this.iterateBSPTree(root);
 	}
 

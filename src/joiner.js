@@ -8,6 +8,8 @@ var canToggleDrawOrder = true;
 var toggleDrawMethod = 0;
 var canToggleDrawMethod = true;
 
+var canIncrementAlpha = true;
+
 function Joiner() {
 	this.initialize = () => {
 		this.positionList = getVerticesFromID('map-data');
@@ -33,6 +35,21 @@ function Joiner() {
 	}
 
 	this.update = () => {
+		if (canIncrementAlpha) {
+			if (input_list.indexOf(173) != -1) {
+				decreaseInterval(0.1);
+				canIncrementAlpha = false;
+			}
+			if (input_list.indexOf(61) != -1) {
+				increaseInterval(0.1);
+				canIncrementAlpha = false;
+			}
+		}
+
+		if (!canIncrementAlpha && input_list.indexOf(173) == -1 && input_list.indexOf(61) == -1) {
+			canIncrementAlpha = true;
+		}
+
 		if (input_list.indexOf(37) != -1 || input_list.indexOf(38) != -1 || input_list.indexOf(39) != -1 || input_list.indexOf(40) != -1) {
 			document.getElementById('indicator-move').setAttribute('class', 'green');
 		}

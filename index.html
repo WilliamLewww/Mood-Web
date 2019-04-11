@@ -14,7 +14,13 @@
     <p class="instruction-text"><mark id="indicator-move" class="red">Arrow Keys</mark> - Move</p>
     <p class="instruction-text"><mark class="green">Spacebar</mark> - Toggle Drawing Method || <mark id="indicator-method-bsp" class="green">BSP</mark> <mark id="indicator-method-first" class="red">First-to-Last</mark> <mark id="indicator-method-last" class="red">Last-to-First</mark></p>
     <p class="instruction-text"><mark id="indicator-solid" class="red">z</mark> - Toggle Wireframe</p>
-    <p class="instruction-text"><mark id="indicator-order" class="red">x</mark> - Toggle Max-Alpha Draw Order || <mark id="indicator-order-first" class="red">First</mark> <mark id="indicator-order-last" class="red">Last</mark></p>
+    <div>
+        <a class="instruction-text"><mark id="indicator-order" class="red">x</mark> - Toggle Max-Alpha Draw Order || <mark id="indicator-order-first" class="red">First</mark> <mark id="indicator-order-last" class="red">Last</mark></a>
+        <a class="instruction-text">&nbsp;&nbsp;&nbsp;Interval: </a>
+        <a id="alpha-interval" class="boxed-text-red">2.0</a>
+        <input type="button" value="+" onclick="increaseInterval(0.2)"> 
+        <input type="button" value="-" onclick="decreaseInterval(0.2)"> 
+    </div>
     <p class="instruction-text"><mark id="indicator-print-bsp" class="red">Enter</mark> - Print BSP Tree to Console</p>
     </div>
     <script src="src/engine.js"></script>

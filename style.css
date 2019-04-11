@@ -33,6 +33,24 @@ canvas {
 	padding-left: 10px;
 }
 
+.boxed-text-green {
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #00FF00;
+}
+
+.boxed-text-red {
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: #FF0000;
+}
+
 mark.green {
 	border-width: 5px;
 	border-style: double;

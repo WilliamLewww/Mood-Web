@@ -1,4 +1,17 @@
 var currentAlpha = 0;
+var alphaInterval = 2;
+
+function increaseInterval(value) {
+	alphaInterval += value;
+	document.getElementById("alpha-interval").innerHTML = alphaInterval.toFixed(1);
+}
+
+function decreaseInterval(value) {
+	if (alphaInterval - value >= 0) {
+		alphaInterval -= value;
+		document.getElementById("alpha-interval").innerHTML = alphaInterval.toFixed(1);
+	}
+}
 
 function FirstPerson(cameraProperties) {
 	this.cameraProperties = cameraProperties;
@@ -82,8 +95,8 @@ function FirstPerson(cameraProperties) {
 			buffer[index].pointC = [x2,y2b];
 			buffer[index].pointD = [x1,y1b];
 			if (toggleDrawOrder == 0) { buffer[index].color[3] = 255; }
-			if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= 1; }
-			if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += 1; }
+			if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= alphaInterval; }
+			if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += alphaInterval; }
 			if (toggleDrawSolid) { buffer[index].draw(); }
 			else { buffer[index].drawWire(); }
 		}

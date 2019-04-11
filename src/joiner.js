@@ -89,6 +89,7 @@ function Joiner() {
 		if (canToggleDrawOrder && input_list.indexOf(88) != -1) {
 			if (toggleDrawOrder == 0) {
 				toggleDrawOrder += 1;
+				document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-green');
 				document.getElementById('indicator-order').setAttribute('class', 'green');
 				document.getElementById('indicator-order-first').setAttribute('class', 'green');
 			}
@@ -101,6 +102,7 @@ function Joiner() {
 				else { 
 					if (toggleDrawOrder == 2) {
 						toggleDrawOrder = 0;
+						document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-red');
 						document.getElementById('indicator-order').setAttribute('class', 'red');
 						document.getElementById('indicator-order-last').setAttribute('class', 'red');
 					}

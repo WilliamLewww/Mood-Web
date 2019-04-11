@@ -26,7 +26,8 @@ function initialize() {
 function mainLoop() {
   update();
   draw();
-  window.setTimeout(mainLoop, 1000 / 60);
+  //window.setTimeout(mainLoop, 1000 / 60);
+  requestAnimationFrame(mainLoop);
 }
 
 function update() {

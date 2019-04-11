@@ -11,11 +11,16 @@ canvas {
 }
 
 mark.green {
+	border-width: 5px;
+	border-style: double;
 	color: #FF0000;
 	background-color: #00FF00;
+	border: 
 }
 
 mark.red {
+	border-width: 5px;
+	border-style: double;
 	color: #00FF00;
 	background-color: #FF0000;
 }

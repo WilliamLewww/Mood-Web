@@ -1,4 +1,6 @@
 var canPrintTree = true;
+var toggleDrawMethod = true;
+var canToggleDrawMethod = true;
 
 function Joiner() {
 	this.initialize = () => {
@@ -36,20 +38,21 @@ function Joiner() {
 			this.cameraPosition[1] -= Math.sin(degreeToRadians(-this.cameraAngle[0]));
 		}
 
-		if (input_list.indexOf(13) != -1 && canPrintTree) {
+		if (canPrintTree && input_list.indexOf(13) != -1) {
 			printBinaryTree(this.tree);
 			canPrintTree = false;
 		}
-		if (input_list.indexOf(13) == -1) { canPrintTree = true; }
+		if (!canPrintTree && input_list.indexOf(13) == -1) { canPrintTree = true; }
+		if (canToggleDrawMethod && input_list.indexOf(32) != -1) {
+			toggleDrawMethod = !toggleDrawMethod;
+			canToggleDrawMethod = false;
+		}
+		if (!canToggleDrawMethod && input_list.indexOf(32) == -1) { canToggleDrawMethod = true; }
 	}
 
 	this.draw = () => {
-		if (input_list.indexOf(32) != -1) {
-			this.firstPerson.draw(this.wallArray);
-		}
-		else {
-			this.firstPerson.drawUsingBSP(this.tree);
-		}
+		if (toggleDrawMethod) { this.firstPerson.drawUsingBSP(this.tree); }
+		else { this.firstPerson.draw(this.wallArray); }
 	}
 }
 

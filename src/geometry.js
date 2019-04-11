@@ -64,17 +64,6 @@ function Quad(pointA, pointB, pointC, pointD, color = [255,0,0,255]) {
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
 
-	this.drawWire = () => {
-		gl.useProgram(this.program);
-		gl.enableVertexAttribArray(this.positionAttributeLocation);
-		gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
-		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArrayWire()), gl.STATIC_DRAW);
-		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
-		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
-		gl.uniform4fv(this.colorLocation, denormalizeColor(this.color));
-		gl.drawArrays(gl.LINES, 0, 8);
-	}
-
 	this.getPositionArray = () => {
 		return [
 			this.pointA[0], this.pointA[1],
@@ -84,6 +73,17 @@ function Quad(pointA, pointB, pointC, pointD, color = [255,0,0,255]) {
 			this.pointA[0], this.pointA[1],
 			this.pointD[0], this.pointD[1],
 		];
+	}
+
+	this.drawWire = () => {
+		gl.useProgram(this.program);
+		gl.enableVertexAttribArray(this.positionAttributeLocation);
+		gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArrayWire()), gl.STATIC_DRAW);
+		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
+		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
+		gl.uniform4fv(this.colorLocation, denormalizeColor(this.color));
+		gl.drawArrays(gl.LINES, 0, 10);
 	}
 
 	this.getPositionArrayWire = () => {
@@ -96,6 +96,8 @@ function Quad(pointA, pointB, pointC, pointD, color = [255,0,0,255]) {
 			this.pointD[0], this.pointD[1],
 			this.pointD[0], this.pointD[1],
 			this.pointA[0], this.pointA[1],
+			this.pointA[0], this.pointA[1],
+			this.pointC[0], this.pointC[1],
 		];
 	}
 }

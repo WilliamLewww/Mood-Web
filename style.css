@@ -11,9 +11,11 @@ canvas {
 }
 
 mark.green {
+	color: #FF0000;
 	background-color: #00FF00;
 }
 
 mark.red {
+	color: #00FF00;
 	background-color: #FF0000;
 }

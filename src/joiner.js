@@ -31,7 +31,7 @@ function Joiner() {
 			document.getElementById('indicator-move').setAttribute('class', 'green');
 		}
 		else { document.getElementById('indicator-move').setAttribute('class', 'red'); }
-		
+
 		if (input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) { this.cameraAngle[0] += 1; }
 		if (input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) { this.cameraAngle[0] -= 1; }
 		if (input_list.indexOf(38) != -1 && input_list.indexOf(40) == -1) {
@@ -46,8 +46,8 @@ function Joiner() {
 		if (canPrintTree && input_list.indexOf(13) != -1) {
 			printBinaryTree(this.tree);
 			canPrintTree = false;
+			document.getElementById('indicator-print-bsp').setAttribute('class', 'green');
 		}
-		if (!canPrintTree && input_list.indexOf(13) == -1) { canPrintTree = true; }
 		if (canToggleDrawMethod && input_list.indexOf(32) != -1) {
 			toggleDrawMethod = !toggleDrawMethod;
 			if (toggleDrawMethod == true) { document.getElementById('indicator-bsp').setAttribute('class', 'green'); }

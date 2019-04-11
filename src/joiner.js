@@ -21,7 +21,7 @@ function Joiner() {
 		this.cameraProperties = [this.cameraPosition, this.cameraAngle];
 
 		this.firstPerson = new FirstPerson(this.cameraProperties);
-		this.firstPerson.initialize(this.wallArray);
+		this.firstPerson.initialize(this.wallArray, this.tree);
 	}
 
 	this.update = () => {
@@ -44,8 +44,12 @@ function Joiner() {
 	}
 
 	this.draw = () => {
-		this.firstPerson.draw(this.wallArray);
-		//this.firstPerson.drawUsingBSP(this.tree);
+		if (input_list.indexOf(32) != -1) {
+			this.firstPerson.draw(this.wallArray);
+		}
+		else {
+			this.firstPerson.drawUsingBSP(this.tree);
+		}
 	}
 }
 
@@ -60,7 +64,8 @@ function Wall(pointA, pointB, color = []) {
 	}
 }
 
-function WallNode(splitter = undefined, left = null, right = null) {
+function WallNode(id = undefined, splitter = undefined, left = null, right = null) {
+	this.id = id;
 	this.splitter = splitter;
 
 	this.left = left;

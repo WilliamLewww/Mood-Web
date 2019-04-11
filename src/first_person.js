@@ -1,21 +1,30 @@
 function FirstPerson(cameraProperties) {
 	this.cameraProperties = cameraProperties;
 
-	this.initialize = (wallArray) => {
+	this.initialize = (wallArray, tree) => {
 		this.wallBuffer = [];
-
 		for (var x = 0; x < wallArray.length; x++) {
 			this.wallBuffer.push(new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1],wallArray[x].color));
 		}
+
+		this.wallBufferTree = Array(currentID);
+		this.linkNodeWithWall(tree);
+	}
+
+	this.linkNodeWithWall = (node) => {
+		if (node == null) { return; }
+		this.linkNodeWithWall(node.left);
+		this.linkNodeWithWall(node.right);
+		this.wallBufferTree[node.id] = new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1], node.splitter.color)
 	}
 
 	this.draw = (wallArray) => {
 		for (var x = 0; x < wallArray.length; x++) {
-			this.drawWall(wallArray[x], x);
+			this.drawWall(wallArray[x], this.wallBuffer, x);
 		}
 	}
 
-	this.drawWall = (wall, index) => {
+	this.drawWall = (wall, buffer, index) => {
 		var tx1 = wall.pointA[0] - this.cameraProperties[0][0], ty1 = wall.pointA[1] - this.cameraProperties[0][1];
 		var tx2 = wall.pointB[0] - this.cameraProperties[0][0], ty2 = wall.pointB[1] - this.cameraProperties[0][1];
 
@@ -56,11 +65,11 @@ function FirstPerson(cameraProperties) {
 			var x1 = -tx1 * 120.0 / tz1, y1a = -(120.0 * 25.0) / tz1, y1b = (120.0 * 25.0) / tz1;
 			var x2 = -tx2 * 120.0 / tz2, y2a = -(120.0 * 25.0) / tz2, y2b = (120.0 * 25.0) / tz2;
 
-			this.wallBuffer[index].pointA = [x1,y1a];
-			this.wallBuffer[index].pointB = [x2,y2a];
-			this.wallBuffer[index].pointC = [x2,y2b];
-			this.wallBuffer[index].pointD = [x1,y1b];
-			this.wallBuffer[index].draw();
+			buffer[index].pointA = [x1,y1a];
+			buffer[index].pointB = [x2,y2a];
+			buffer[index].pointC = [x2,y2b];
+			buffer[index].pointD = [x1,y1b];
+			buffer[index].draw();
 		}
 	}
 
@@ -72,12 +81,12 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
 			this.iterateBSPTree(node.left);
-			//this.drawWallBSP(node.splitter);
+			this.drawWall(node.splitter, this.wallBufferTree, node.id);
 			this.iterateBSPTree(node.right);
 		}
 		else {
 			this.iterateBSPTree(node.right);
-			//this.drawWallBSP(node.splitter);
+			this.drawWall(node.splitter, this.wallBufferTree, node.id);
 			this.iterateBSPTree(node.left);
 		}
 	}

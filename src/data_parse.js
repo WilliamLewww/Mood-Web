@@ -68,6 +68,7 @@ function getBinaryTreeFromID(ID) {
 	return root;
 }
 
+var currentID = 0;
 function readBinaryTreeToken(node, data) {
 	var token = data[position].replace('(', '').replace(')', '');
 	position += 1;
@@ -85,8 +86,9 @@ function readBinaryTreeToken(node, data) {
 
 		token = token.split(',');
 
-		var wall = new Wall(pointA, pointB, [parseFloat(token[0]), parseFloat(token[1]), parseFloat(token[2])]);
-		node = new WallNode(wall);
+		var wall = new Wall(pointA, pointB, [parseFloat(token[0]), parseFloat(token[1]), parseFloat(token[2]), 255]);
+		node = new WallNode(currentID, wall);
+		currentID += 1;
 
 		node.left = readBinaryTreeToken(node.left, data, position);
 		node.right = readBinaryTreeToken(node.right, data, position);

@@ -33,6 +33,16 @@ canvas {
 	padding-left: 10px;
 }
 
+.button-text-green {
+	font-size: 18px;
+	box-shadow: 0 2px 6px rgba(0,255,0,255);
+}
+
+.button-text-red {
+	font-size: 18px;
+	box-shadow: 0 2px 6px rgba(255,0,0,255);
+}
+
 .boxed-text-green {
 	font-size: 20px;
 	border-style: solid;

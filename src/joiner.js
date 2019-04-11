@@ -80,8 +80,8 @@ function Joiner() {
 
 		if (canToggleDrawSolid && input_list.indexOf(90) != -1) {
 			toggleDrawSolid = !toggleDrawSolid;
-			if (toggleDrawSolid == true) { document.getElementById('indicator-solid').setAttribute('class', 'green'); }
-			else { document.getElementById('indicator-solid').setAttribute('class', 'red'); }
+			if (toggleDrawSolid == true) { document.getElementById('indicator-solid').setAttribute('class', 'red'); }
+			else { document.getElementById('indicator-solid').setAttribute('class', 'green'); }
 			canToggleDrawSolid = false;
 		}
 		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }

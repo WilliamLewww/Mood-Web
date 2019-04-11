@@ -550,16 +550,7 @@
 			"file": "src/geometry.js",
 			"settings":
 			{
-				"buffer_size": 2423,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/shader_source.js",
-			"settings":
-			{
-				"buffer_size": 855,
+				"buffer_size": 3666,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -580,6 +571,15 @@
 				"buffer_size": 10870,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/shader_source.js",
+			"settings":
+			{
+				"buffer_size": 855,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -1539,7 +1539,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1614,8 +1614,8 @@
 						"selection":
 						[
 							[
-								1629,
-								1629
+								1191,
+								1191
 							]
 						],
 						"settings":
@@ -1624,7 +1624,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 42.0,
+						"translation.y": 70.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1636,15 +1636,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2423,
+						"buffer_size": 3666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								977,
-								977
+								2295,
+								2295
 							]
 						],
 						"settings":
@@ -1653,42 +1653,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/shader_source.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 855,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								784,
-								784
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 213.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "src/data_parse.js",
 					"semi_transient": false,
 					"settings":
@@ -1717,7 +1689,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -1747,6 +1719,40 @@
 					"type": "text"
 				}
 			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "src/shader_source.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								784,
+								784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
 		}
 	],
 	"incremental_find":
@@ -1766,11 +1772,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

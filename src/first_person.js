@@ -6,7 +6,7 @@ function FirstPerson(cameraProperties) {
 		this.wallBuffer = [];
 
 		for (var x = 0; x < this.wallCount; x++) {
-			this.wallBuffer.push(new Line([-1,-1],[-1,-1], wallArray[x].color));
+			this.wallBuffer.push(new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1],wallArray[x].color));
 		}
 	}
 
@@ -57,10 +57,10 @@ function FirstPerson(cameraProperties) {
 			var x1 = -tx1 * 120.0 / tz1, y1a = -(120.0 * 25.0) / tz1, y1b = (120.0 * 25.0) / tz1;
 			var x2 = -tx2 * 120.0 / tz2, y2a = -(120.0 * 25.0) / tz2, y2b = (120.0 * 25.0) / tz2;
 
-			this.wallBuffer[index].x1 = x1;
-			this.wallBuffer[index].y1 = y1a;
-			this.wallBuffer[index].x2 = x2;
-			this.wallBuffer[index].y2 = y2a;
+			this.wallBuffer[index].pointA = [x1,y1a];
+			this.wallBuffer[index].pointB = [x2,y2a];
+			this.wallBuffer[index].pointC = [x2,y2b];
+			this.wallBuffer[index].pointD = [x1,y1b];
 			this.wallBuffer[index].draw();
 
 			// std::vector<Vector2> polygonA = { Vector2(x1, y1a), Vector2(x2, y2a), Vector2(x2, y2b), Vector2(x1, y1b) };

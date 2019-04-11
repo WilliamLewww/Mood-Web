@@ -9,7 +9,7 @@ function Joiner() {
 		var colorIndex = 0;
 		for (var x = 0; x < this.positionList.length; x += 2) {
 			this.wallArray.push(new Wall(this.positionList[x], this.positionList[x + 1],
-										[this.colorList[colorIndex], this.colorList[colorIndex + 1], this.colorList[colorIndex + 2], 1]
+										[this.colorList[colorIndex], this.colorList[colorIndex + 1], this.colorList[colorIndex + 2], 255]
 			));
 			colorIndex += 3;
 		}

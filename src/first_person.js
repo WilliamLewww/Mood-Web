@@ -2,10 +2,9 @@ function FirstPerson(cameraProperties) {
 	this.cameraProperties = cameraProperties;
 
 	this.initialize = (wallArray) => {
-		this.wallCount = wallArray.length;
 		this.wallBuffer = [];
 
-		for (var x = 0; x < this.wallCount; x++) {
+		for (var x = 0; x < wallArray.length; x++) {
 			this.wallBuffer.push(new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1],wallArray[x].color));
 		}
 	}
@@ -62,19 +61,37 @@ function FirstPerson(cameraProperties) {
 			this.wallBuffer[index].pointC = [x2,y2b];
 			this.wallBuffer[index].pointD = [x1,y1b];
 			this.wallBuffer[index].draw();
-
-			// std::vector<Vector2> polygonA = { Vector2(x1, y1a), Vector2(x2, y2a), Vector2(x2, y2b), Vector2(x1, y1b) };
-			// drawing.drawPolygon(polygonA, wall.color);
 		}
 	}
 
 	this.drawUsingBSP = (root) => {
-
+		this.iterateBSPTree(root);
 	}
 
 	this.iterateBSPTree = (node) => {
-
+		if (node == null) { return; }
+		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
+			this.iterateBSPTree(node.left);
+			//this.drawWallBSP(node.splitter);
+			this.iterateBSPTree(node.right);
+		}
+		else {
+			this.iterateBSPTree(node.right);
+			//this.drawWallBSP(node.splitter);
+			this.iterateBSPTree(node.left);
+		}
 	}
+}
+
+function getWallPosition(parentWall, position) {
+	var slope = (parentWall.pointB[1] - parentWall.pointA[1]) / (parentWall.pointB[0] - parentWall.pointA[0]);
+	var yInt = parentWall.pointA[1] + (-slope * parentWall.pointA[0]);
+
+	if (position[1] > (slope * position[0]) + yInt) {
+		return 1;
+	}
+
+	return 0;
 }
 
 function degreeToRadians(degree) {

@@ -1,3 +1,5 @@
+var canPrintTree = true;
+
 function Joiner() {
 	this.initialize = () => {
 		this.positionList = getVerticesFromID('map-data');
@@ -34,10 +36,16 @@ function Joiner() {
 			this.cameraPosition[1] -= Math.sin(degreeToRadians(-this.cameraAngle[0]));
 		}
 
+		if (input_list.indexOf(13) != -1 && canPrintTree) {
+			printBinaryTree(this.tree);
+			canPrintTree = false;
+		}
+		if (input_list.indexOf(13) == -1) { canPrintTree = true; }
 	}
 
 	this.draw = () => {
 		this.firstPerson.draw(this.wallArray);
+		//this.firstPerson.drawUsingBSP(this.tree);
 	}
 }
 

@@ -69,7 +69,8 @@ function FirstPerson(cameraProperties) {
 			buffer[index].pointB = [x2,y2a];
 			buffer[index].pointC = [x2,y2b];
 			buffer[index].pointD = [x1,y1b];
-			buffer[index].draw();
+			if (toggleDrawSolid) { buffer[index].draw(); }
+			else { buffer[index].drawWire(); }
 		}
 	}
 

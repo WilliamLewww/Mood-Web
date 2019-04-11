@@ -1,6 +1,8 @@
 var canPrintTree = true;
 var toggleDrawMethod = true;
 var canToggleDrawMethod = true;
+var toggleDrawSolid = true;
+var canToggleDrawSolid = true;
 
 function Joiner() {
 	this.initialize = () => {
@@ -55,6 +57,14 @@ function Joiner() {
 			canToggleDrawMethod = false;
 		}
 		if (!canToggleDrawMethod && input_list.indexOf(32) == -1) { canToggleDrawMethod = true; }
+
+		if (canToggleDrawSolid && input_list.indexOf(90) != -1) {
+			toggleDrawSolid = !toggleDrawSolid;
+			if (toggleDrawSolid == true) { document.getElementById('indicator-solid').setAttribute('class', 'green'); }
+			else { document.getElementById('indicator-solid').setAttribute('class', 'red'); }
+			canToggleDrawSolid = false;
+		}
+		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }
 	}
 
 	this.draw = () => {

@@ -10,12 +10,18 @@ canvas {
 	visibility: hidden;
 }
 
+.title-text {
+	font-size: 24px;
+	text-align: center;
+	border-width: 5px;
+	border-style: inset;
+}
+
 mark.green {
 	border-width: 5px;
 	border-style: double;
 	color: #FF0000;
 	background-color: #00FF00;
-	border: 
 }
 
 mark.red {

@@ -22,8 +22,16 @@ function FirstPerson(cameraProperties) {
 			this.wallBuffer.push(new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1],wallArray[x].color));
 		}
 
+		this.wallBufferTextured = [];
+		for (var x = 0; x < wallArray.length; x++) {
+			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/2.png"));
+		}
+
 		this.wallBufferTree = Array(currentID);
 		this.linkNodeWithWall(tree);
+
+		this.wallBufferTreeTextured = Array(currentID);
+		this.linkNodeWithWallTextured(tree);
 	}
 
 	this.linkNodeWithWall = (node) => {
@@ -33,11 +41,21 @@ function FirstPerson(cameraProperties) {
 		this.wallBufferTree[node.id] = new Quad([-1,-1],[-1,-1],[-1,-1],[-1,-1], node.splitter.color)
 	}
 
+	this.linkNodeWithWallTextured = (node) => {
+		if (node == null) { return; }
+		this.linkNodeWithWallTextured(node.left);
+		this.linkNodeWithWallTextured(node.right);
+		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/2.png")
+	}
+
 	this.drawFirstToLast = (wallArray) => {
 		if (toggleDrawOrder == 1) { currentAlpha = 255; }
 		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = 0; x < wallArray.length; x++) {
-			this.drawWall(wallArray[x], this.wallBuffer, x);
+			if (toggleDrawSolid == 2) {
+				this.drawWall(wallArray[x], this.wallBufferTextured, x);
+			}
+			else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 		}
 	}
 
@@ -45,7 +63,10 @@ function FirstPerson(cameraProperties) {
 		if (toggleDrawOrder == 1) { currentAlpha = 255; }
 		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = wallArray.length - 1; x >= 0; x--) {
-			this.drawWall(wallArray[x], this.wallBuffer, x);
+			if (toggleDrawSolid == 2) {
+				this.drawWall(wallArray[x], this.wallBufferTextured, x);
+			}
+			else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 		}
 	}
 
@@ -62,8 +83,8 @@ function FirstPerson(cameraProperties) {
 		tx2 = (tx2 * s) - (ty2 * c);
 
 		if (tz1 > 0 || tz2 > 0) {
-			var i1 = getIntersection(tx1, tz1, tx2, tz2, -0.0001, 0.0001, -280.0, 5.0);
-			var i2 = getIntersection(tx1, tz1, tx2, tz2,  0.0001, 0.0001,  280.0, 5.0);
+			var i1 = getIntersection(tx1, tz1, tx2, tz2, -0.0001, 0.0001, -270.0, 5.0);
+			var i2 = getIntersection(tx1, tz1, tx2, tz2,  0.0001, 0.0001,  270.0, 5.0);
 
 			if (tz1 <= 0) {
 				if (i1[1] > 0) {
@@ -94,11 +115,16 @@ function FirstPerson(cameraProperties) {
 			buffer[index].pointB = [x2,y2a];
 			buffer[index].pointC = [x2,y2b];
 			buffer[index].pointD = [x1,y1b];
-			if (toggleDrawOrder == 0) { buffer[index].color[3] = 255; }
-			if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= alphaInterval; }
-			if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += alphaInterval; }
-			if (toggleDrawSolid) { buffer[index].draw(); }
-			else { buffer[index].drawWire(); }
+			if (toggleDrawSolid != 2) {
+				if (toggleDrawOrder == 0) { buffer[index].color[3] = 255; }
+				if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= alphaInterval; }
+				if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += alphaInterval; }
+				if (toggleDrawSolid == 0) { buffer[index].draw(); }
+				if (toggleDrawSolid == 1) { buffer[index].drawWire(); }
+			}
+			else {
+				buffer[index].draw();
+			}
 		}
 	}
 
@@ -112,12 +138,18 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
 			this.iterateBSPTree(node.left);
-			this.drawWall(node.splitter, this.wallBufferTree, node.id);
+			if (toggleDrawSolid == 2) {
+				this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id);
+			}
+			else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			this.iterateBSPTree(node.right);
 		}
 		else {
 			this.iterateBSPTree(node.right);
-			this.drawWall(node.splitter, this.wallBufferTree, node.id);
+			if (toggleDrawSolid == 2) {
+				this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id);
+			}
+			else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			this.iterateBSPTree(node.left);
 		}
 	}

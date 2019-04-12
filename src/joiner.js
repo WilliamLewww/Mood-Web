@@ -1,5 +1,6 @@
 var canPrintTree = true;
-var toggleDrawSolid = true;
+
+var toggleDrawSolid = 0;
 var canToggleDrawSolid = true;
 
 var toggleDrawOrder = 0;
@@ -96,9 +97,25 @@ function Joiner() {
 		if (!canToggleDrawMethod && input_list.indexOf(32) == -1) { canToggleDrawMethod = true; }
 
 		if (canToggleDrawSolid && input_list.indexOf(90) != -1) {
-			toggleDrawSolid = !toggleDrawSolid;
-			if (toggleDrawSolid == true) { document.getElementById('indicator-solid').setAttribute('class', 'red'); }
-			else { document.getElementById('indicator-solid').setAttribute('class', 'green'); }
+			if (toggleDrawSolid == 0) {
+				toggleDrawSolid += 1;
+				document.getElementById('indicator-texture-solid').setAttribute('class', 'red');
+				document.getElementById('indicator-texture-wireframe').setAttribute('class', 'green');
+			}
+			else {
+				if (toggleDrawSolid == 1) {
+					toggleDrawSolid += 1;
+					document.getElementById('indicator-texture-wireframe').setAttribute('class', 'red');
+					document.getElementById('indicator-texture-textured').setAttribute('class', 'green');
+				}
+				else { 
+					if (toggleDrawSolid == 2) {
+						toggleDrawSolid = 0;
+						document.getElementById('indicator-texture-textured').setAttribute('class', 'red');
+						document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
+					}
+				}
+			}
 			canToggleDrawSolid = false;
 		}
 		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }

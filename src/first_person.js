@@ -1,5 +1,6 @@
 var currentAlpha = 0;
 var alphaInterval = 2;
+var fov = 270;
 
 function increaseInterval(value) {
 	alphaInterval += value;
@@ -10,6 +11,18 @@ function decreaseInterval(value) {
 	if (alphaInterval - value >= 0) {
 		alphaInterval -= value;
 		document.getElementById("alpha-interval").innerHTML = alphaInterval.toFixed(1);
+	}
+}
+
+function increaseFOV(value) {
+	fov += value;
+	document.getElementById("indicator-fov").innerHTML = fov.toFixed(0);
+}
+
+function decreaseFOV(value) {
+	if (fov - value >= 0) {
+		fov -= value;
+		document.getElementById("indicator-fov").innerHTML = fov.toFixed(0);
 	}
 }
 
@@ -24,7 +37,7 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTextured = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/2.png"));
+			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
 		}
 
 		this.wallBufferTree = Array(currentID);
@@ -45,7 +58,7 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		this.linkNodeWithWallTextured(node.left);
 		this.linkNodeWithWallTextured(node.right);
-		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/2.png")
+		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
 	}
 
 	this.drawFirstToLast = (wallArray) => {
@@ -108,8 +121,8 @@ function FirstPerson(cameraProperties) {
 				}
 			}
 
-			var x1 = -tx1 * 120.0 / tz1, y1a = -(120.0 * 25.0) / tz1, y1b = (120.0 * 25.0) / tz1;
-			var x2 = -tx2 * 120.0 / tz2, y2a = -(120.0 * 25.0) / tz2, y2b = (120.0 * 25.0) / tz2;
+			var x1 = -tx1 * fov / tz1, y1a = -(fov * 25.0) / tz1, y1b = (fov * 25.0) / tz1;
+			var x2 = -tx2 * fov / tz2, y2a = -(fov * 25.0) / tz2, y2b = (fov * 25.0) / tz2;
 
 			buffer[index].pointA = [x1,y1a];
 			buffer[index].pointB = [x2,y2a];

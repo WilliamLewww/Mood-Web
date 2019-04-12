@@ -11,7 +11,13 @@
     </canvas>
     <p class="title-text">Binary Space Partitioning Demonstration</p>
     <div class="instruction-box">
-    <p class="instruction-text"><mark id="indicator-move" class="red">Arrow Keys</mark> - Move</p>
+    <div class="top-instruction">
+        <a class="instruction-text"><mark id="indicator-move" class="red">Arrow Keys</mark> - Move</a>
+        <a class="instruction-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Field of View: </a>
+        <a id="indicator-fov" class="boxed-text">270</a>
+        <input class="button-text-red" type="button" value="-" onclick="decreaseFOV(5)"> 
+        <input class="button-text-green" type="button" value="+" onclick="increaseFOV(5)"> 
+    </div>
     <p class="instruction-text"><mark class="green">Spacebar</mark> - Toggle Drawing Method => <mark id="indicator-method-bsp" class="green">BSP</mark> <mark id="indicator-method-first" class="red">First-to-Last</mark> <mark id="indicator-method-last" class="red">Last-to-First</mark></p>
     <p class="instruction-text"><mark class="green">z</mark> - Toggle Texture => <mark id="indicator-texture-solid" class="green">Solid</mark> <mark id="indicator-texture-wireframe" class="red">Wireframe</mark> <mark id="indicator-texture-textured" class="red">Textured</mark></p>
     <div>

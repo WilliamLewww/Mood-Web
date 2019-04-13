@@ -37,7 +37,7 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTextured = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
+			this.wallBufferTextured.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
 		}
 
 		this.wallBufferTree = Array(currentID);
@@ -58,7 +58,7 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		this.linkNodeWithWallTextured(node.left);
 		this.linkNodeWithWallTextured(node.right);
-		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
+		this.wallBufferTreeTextured[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
 	}
 
 	this.drawFirstToLast = (wallArray) => {
@@ -181,10 +181,6 @@ function getWallPosition(parentWall, position) {
 
 function degreeToRadians(degree) {
 	return (degree * (Math.PI / 180.0));
-}
-
-function crossMultiply(x1, y1, x2, y2) {
-	return (x1 * y2) - (y1 * x2);
 }
 
 function getIntersection(x1, y1, x2, y2, x3, y3, x4, y4) {

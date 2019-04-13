@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
 				"Qu",
 				"QuadTextured"
 			],
@@ -30,10 +34,6 @@
 			[
 				"paddi",
 				"padding-right\tproperty"
-			],
-			[
-				"padd",
-				"padding-left\tproperty"
 			],
 			[
 				"border-lef",
@@ -520,11 +520,18 @@
 	"buffers":
 	[
 		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 12772,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/first_person.js",
 			"settings":
 			{
-				"buffer_size": 5749,
-				"encoding": "UTF-8",
+				"buffer_size": 6018,
 				"line_ending": "Windows"
 			}
 		},
@@ -532,43 +539,7 @@
 			"file": "src/geometry.js",
 			"settings":
 			{
-				"buffer_size": 7304,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 12386,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/joiner.js",
-			"settings":
-			{
-				"buffer_size": 6217,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/engine.js",
-			"settings":
-			{
-				"buffer_size": 1846,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/data_parse.js",
-			"settings":
-			{
-				"buffer_size": 2537,
+				"buffer_size": 7100,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -578,7 +549,14 @@
 			"settings":
 			{
 				"buffer_size": 1955,
-				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/joiner.js",
+			"settings":
+			{
+				"buffer_size": 6217,
 				"line_ending": "Windows"
 			}
 		}
@@ -1015,6 +993,26 @@
 		"selected_items":
 		[
 			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
 				"rever",
 				"Permute Lines: Reverse"
 			],
@@ -1049,18 +1047,6 @@
 			[
 				"packa",
 				"Package Control: Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"color",
-				"UI: Select Color Scheme"
 			],
 			[
 				"color sc",
@@ -1259,10 +1245,6 @@
 				"Git: Add All"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"git commit",
 				"Git: Commit"
 			],
@@ -1376,14 +1358,22 @@
 	],
 	"file_history":
 	[
-		"/C/Users/William/Desktop/jquery_test.js",
+		"/C/Users/William/Desktop/hellen.py",
+		"/C/Users/William/Desktop/scripts/test.js",
+		"/C/Users/William/Desktop/Coding Resources.txt",
+		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Projects/Mood-Web/src/first_person.js",
 		"/C/Projects/Mood-Web/index.html",
+		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Projects/Mood-Web/src/geometry.js",
 		"/C/Projects/Mood-Web/style.css",
-		"/C/Users/William/.software/CodeTime.txt",
-		"/C/Projects/Mood-Web/src/engine.js",
 		"/C/Projects/Mood-Web/src/shader_source.js",
 		"/C/Projects/Mood-Web/src/data_parse.js",
-		"/C/Projects/Mood-Web/src/geometry.js",
+		"/C/Projects/Mood-Web/src/engine.js",
+		"/C/Projects/Mood-Web/src/joiner.js",
+		"/C/Projects/Mood-Web/project.sublime-project",
+		"/C/Users/William/Desktop/jquery_test.js",
+		"/C/Users/William/.software/CodeTime.txt",
 		"/C/Users/William/Downloads/dyArray.h",
 		"/C/Users/William/Downloads/dyArray-main.cpp",
 		"/C/Projects/Mood-Web/res/map.txt",
@@ -1392,7 +1382,6 @@
 		"/C/Projects/Mood-Web/public_html/src/engine.js",
 		"/C/Projects/WebGL-Engine/project.sublime-project",
 		"/C/Projects/WebGL-Engine/project.sublime-workspace",
-		"/C/Projects/Mood-Web/project.sublime-project",
 		"/C/Projects/Mood-Web/public_html/index.html",
 		"/C/Projects/Mood-Web/public_html/src/rectangle.js",
 		"/C/Projects/Mood-Web/public_html/style.css",
@@ -1496,18 +1485,11 @@
 		"/C/Projects/Nautilus/src/stats.h",
 		"/C/Projects/Nautilus/src/stats.cpp",
 		"/C/Projects/Nautilus/src/dummy.cpp",
-		"/C/Projects/Nautilus/src/dummy.h",
-		"/C/Projects/Nautilus/src/nautilus.cpp",
-		"/C/Projects/Nautilus/src/rectangle_index.cpp",
-		"/C/Projects/Nautilus/src/nautilus.h",
-		"/C/Projects/Nautilus/src/world.h",
-		"/C/Projects/Nautilus/project.sublime-project",
-		"/C/Projects/Nautilus/src/wall.h",
-		"/C/Projects/Nautilus/src/wall.cpp"
+		"/C/Projects/Nautilus/src/dummy.h"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -1522,6 +1504,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"alphaInterval",
+			"270",
+			"120",
 			"2.png",
 			"0",
 			"drawWall",
@@ -1597,488 +1582,30 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/first_person.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5749,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								370,
-								370
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 36.0,
-						"translation.y": 70.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/geometry.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7304,
-						"regions":
-						{
-							"col_0000FFFF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										2129,
-										2133
-									]
-								],
-								"scope": "col_0000FFFF"
-							},
-							"col_0000FFFF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_0000FFFF_fill.png",
-								"regions":
-								[
-									[
-										2094,
-										2094
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								838,
-								838
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12386,
+						"buffer_size": 12772,
 						"regions":
 						{
-							"col_008000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										627,
-										632
-									],
-									[
-										716,
-										721
-									],
-									[
-										916,
-										921
-									],
-									[
-										994,
-										999
-									]
-								],
-								"scope": "col_008000FF"
-							},
-							"col_008000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_008000FF_fill.png",
-								"regions":
-								[
-									[
-										582,
-										582
-									],
-									[
-										871,
-										871
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FF0000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										548,
-										551
-									],
-									[
-										775,
-										778
-									],
-									[
-										841,
-										844
-									],
-									[
-										1060,
-										1063
-									],
-									[
-										1127,
-										1130
-									],
-									[
-										1232,
-										1235
-									],
-									[
-										1319,
-										1322
-									],
-									[
-										1376,
-										1379
-									],
-									[
-										1805,
-										1808
-									]
-								],
-								"scope": "col_FF0000FF"
-							},
-							"col_FF0000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_fill.png",
-								"regions":
-								[
-									[
-										483,
-										483
-									],
-									[
-										582,
-										582
-									],
-									[
-										871,
-										871
-									],
-									[
-										1162,
-										1162
-									],
-									[
-										1735,
-										1735
-									]
-								],
-								"scope": "col_gutter"
-							}
 						},
 						"selection":
 						[
 							[
-								15,
-								15
+								2120,
+								2120
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 707.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/joiner.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6217,
-						"regions":
-						{
-							"col_008000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										1592,
-										1597
-									],
-									[
-										2529,
-										2534
-									],
-									[
-										2821,
-										2826
-									],
-									[
-										3068,
-										3073
-									],
-									[
-										3319,
-										3324
-									],
-									[
-										3759,
-										3764
-									],
-									[
-										4014,
-										4019
-									],
-									[
-										4271,
-										4276
-									],
-									[
-										4700,
-										4705
-									],
-									[
-										4785,
-										4790
-									],
-									[
-										5028,
-										5033
-									]
-								],
-								"scope": "col_008000FF"
-							},
-							"col_008000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_008000FF_fill.png",
-								"regions":
-								[
-									[
-										1524,
-										1524
-									],
-									[
-										2456,
-										2456
-									],
-									[
-										2744,
-										2744
-									],
-									[
-										2991,
-										2991
-									],
-									[
-										3242,
-										3242
-									],
-									[
-										3677,
-										3677
-									],
-									[
-										3932,
-										3932
-									],
-									[
-										4191,
-										4191
-									],
-									[
-										4630,
-										4630
-									],
-									[
-										4709,
-										4709
-									],
-									[
-										4952,
-										4952
-									]
-								],
-								"scope": "col_gutter"
-							},
-							"col_FF0000FF":
-							{
-								"flags": 16,
-								"regions":
-								[
-									[
-										1679,
-										1682
-									],
-									[
-										2737,
-										2740
-									],
-									[
-										2984,
-										2987
-									],
-									[
-										3235,
-										3238
-									],
-									[
-										3670,
-										3673
-									],
-									[
-										3925,
-										3928
-									],
-									[
-										4184,
-										4187
-									],
-									[
-										4945,
-										4948
-									],
-									[
-										5276,
-										5279
-									],
-									[
-										5360,
-										5363
-									]
-								],
-								"scope": "col_FF0000FF"
-							},
-							"col_FF0000FF_icon":
-							{
-								"flags": 16,
-								"icon": "Packages/User/Color Highlight.cache/col_FF0000FF_fill.png",
-								"regions":
-								[
-									[
-										1605,
-										1605
-									],
-									[
-										2662,
-										2662
-									],
-									[
-										2906,
-										2906
-									],
-									[
-										3157,
-										3157
-									],
-									[
-										3592,
-										3592
-									],
-									[
-										3842,
-										3842
-									],
-									[
-										4101,
-										4101
-									],
-									[
-										4868,
-										4868
-									],
-									[
-										5204,
-										5204
-									],
-									[
-										5283,
-										5283
-									]
-								],
-								"scope": "col_gutter"
-							}
-						},
-						"selection":
-						[
-							[
-								3791,
-								3806
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 31.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/engine.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1846,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								437,
-								437
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -2089,20 +1616,49 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/data_parse.js",
+					"buffer": 1,
+					"file": "src/first_person.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2537,
+						"buffer_size": 6018,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								734,
-								735
+								1829,
+								1829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/geometry.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2025,
+								2025
 							]
 						],
 						"settings":
@@ -2114,11 +1670,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "src/shader_source.js",
 					"semi_transient": false,
 					"settings":
@@ -2130,8 +1686,8 @@
 						"selection":
 						[
 							[
-								1767,
-								1767
+								1723,
+								1732
 							]
 						],
 						"settings":
@@ -2139,10 +1695,39 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/joiner.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -2150,7 +1735,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -2195,7 +1780,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2205,12 +1790,36 @@
 		"selected_items":
 		[
 			[
+				"ge",
+				"src\\geometry.js"
+			],
+			[
+				"sha",
+				"src\\shader_source.js"
+			],
+			[
+				"",
+				"src\\joiner.js"
+			],
+			[
+				"fi",
+				"src\\first_person.js"
+			],
+			[
 				"inde",
 				"index.html"
 			],
 			[
 				"fir",
 				"src\\first_person.js"
+			],
+			[
+				"p",
+				"project.sublime-project"
+			],
+			[
+				"css",
+				"style.css"
 			],
 			[
 				"sh",
@@ -2229,10 +1838,6 @@
 				"src\\geometry.js"
 			],
 			[
-				"css",
-				"style.css"
-			],
-			[
 				"index",
 				"index.html"
 			],
@@ -2245,23 +1850,11 @@
 				"src\\data_parse.js"
 			],
 			[
-				"sha",
-				"src\\shader_source.js"
-			],
-			[
-				"ge",
-				"src\\geometry.js"
-			],
-			[
 				"engi",
 				"src\\engine.js"
 			],
 			[
 				"shader",
-				"public_html\\src\\shader_source.js"
-			],
-			[
-				"",
 				"public_html\\src\\shader_source.js"
 			],
 			[
@@ -2329,10 +1922,6 @@
 				"src\\third_person.cpp"
 			],
 			[
-				"fi",
-				"src\\first_person.cpp"
-			],
-			[
 				"third",
 				"src\\third_person_translated.cpp"
 			],
@@ -2383,10 +1972,6 @@
 			[
 				"dr",
 				"src\\core\\drawing.cpp"
-			],
-			[
-				"p",
-				"project.sublime-project"
 			],
 			[
 				"ma",

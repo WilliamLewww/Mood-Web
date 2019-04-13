@@ -42,7 +42,7 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTexturedCorrected = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTextured.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
+			this.wallBufferTexturedCorrected.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
 		}
 
 		this.wallBufferTree = Array(currentID);
@@ -82,7 +82,7 @@ function FirstPerson(cameraProperties) {
 		for (var x = 0; x < wallArray.length; x++) {
 			if (toggleDrawSolid == 2) { this.drawWall(wallArray[x], this.wallBufferTextured, x); }
 			else {
-				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTexturedCorrected, node.id); }
+				if (toggleDrawSolid == 3) { this.drawWall(wallArray[x], this.wallBufferTexturedCorrected, x); }
 				else { this.drawWall(wallArray[x], this.wallBuffer, x); } 
 			}
 		}
@@ -94,7 +94,7 @@ function FirstPerson(cameraProperties) {
 		for (var x = wallArray.length - 1; x >= 0; x--) {
 			if (toggleDrawSolid == 2) { this.drawWall(wallArray[x], this.wallBufferTextured, x); }
 			else { 
-				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTexturedCorrected, node.id); }
+				if (toggleDrawSolid == 3) { this.drawWall(wallArray[x], this.wallBufferTexturedCorrected, x); }
 				else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 			}
 		}

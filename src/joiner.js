@@ -110,9 +110,16 @@ function Joiner() {
 				}
 				else { 
 					if (toggleDrawSolid == 2) {
-						toggleDrawSolid = 0;
+						toggleDrawSolid += 1;
 						document.getElementById('indicator-texture-textured').setAttribute('class', 'red');
-						document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
+						document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'green');
+					}
+					else {
+						if (toggleDrawSolid == 3) {
+							toggleDrawSolid = 0;
+							document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'red');
+							document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
+						}
 					}
 				}
 			}

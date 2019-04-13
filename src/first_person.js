@@ -37,6 +37,11 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTextured = [];
 		for (var x = 0; x < wallArray.length; x++) {
+			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
+		}
+
+		this.wallBufferTexturedCorrected = [];
+		for (var x = 0; x < wallArray.length; x++) {
 			this.wallBufferTextured.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
 		}
 
@@ -45,6 +50,9 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTreeTextured = Array(currentID);
 		this.linkNodeWithWallTextured(tree);
+
+		this.wallBufferTreeTexturedCorrected = Array(currentID);
+		this.linkNodeWithWallTexturedCorrected(tree);
 	}
 
 	this.linkNodeWithWall = (node) => {
@@ -58,17 +66,25 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		this.linkNodeWithWallTextured(node.left);
 		this.linkNodeWithWallTextured(node.right);
-		this.wallBufferTreeTextured[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
+		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
+	}
+
+	this.linkNodeWithWallTexturedCorrected = (node) => {
+		if (node == null) { return; }
+		this.linkNodeWithWallTexturedCorrected(node.left);
+		this.linkNodeWithWallTexturedCorrected(node.right);
+		this.wallBufferTreeTexturedCorrected[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
 	}
 
 	this.drawFirstToLast = (wallArray) => {
 		if (toggleDrawOrder == 1) { currentAlpha = 255; }
 		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = 0; x < wallArray.length; x++) {
-			if (toggleDrawSolid == 2) {
-				this.drawWall(wallArray[x], this.wallBufferTextured, x);
+			if (toggleDrawSolid == 2) { this.drawWall(wallArray[x], this.wallBufferTextured, x); }
+			else {
+				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTexturedCorrected, node.id); }
+				else { this.drawWall(wallArray[x], this.wallBuffer, x); } 
 			}
-			else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 		}
 	}
 
@@ -76,10 +92,11 @@ function FirstPerson(cameraProperties) {
 		if (toggleDrawOrder == 1) { currentAlpha = 255; }
 		if (toggleDrawOrder == 2) { currentAlpha = 0; }
 		for (var x = wallArray.length - 1; x >= 0; x--) {
-			if (toggleDrawSolid == 2) {
-				this.drawWall(wallArray[x], this.wallBufferTextured, x);
+			if (toggleDrawSolid == 2) { this.drawWall(wallArray[x], this.wallBufferTextured, x); }
+			else { 
+				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTexturedCorrected, node.id); }
+				else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 			}
-			else { this.drawWall(wallArray[x], this.wallBuffer, x); }
 		}
 	}
 
@@ -128,7 +145,7 @@ function FirstPerson(cameraProperties) {
 			buffer[index].pointB = [x2,y2a];
 			buffer[index].pointC = [x2,y2b];
 			buffer[index].pointD = [x1,y1b];
-			if (toggleDrawSolid != 2) {
+			if (toggleDrawSolid != 2 && toggleDrawSolid != 3) {
 				if (toggleDrawOrder == 0) { buffer[index].color[3] = 255; }
 				if (toggleDrawOrder == 1) { buffer[index].color[3] = currentAlpha; currentAlpha -= alphaInterval; }
 				if (toggleDrawOrder == 2) { buffer[index].color[3] = currentAlpha; currentAlpha += alphaInterval; }
@@ -151,18 +168,20 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
 			this.iterateBSPTree(node.left);
-			if (toggleDrawSolid == 2) {
-				this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id);
+			if (toggleDrawSolid == 2) { this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id); }
+			else { 
+				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTreeTexturedCorrected, node.id); }
+				else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			}
-			else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			this.iterateBSPTree(node.right);
 		}
 		else {
 			this.iterateBSPTree(node.right);
-			if (toggleDrawSolid == 2) {
-				this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id);
+			if (toggleDrawSolid == 2) { this.drawWall(node.splitter, this.wallBufferTreeTextured, node.id); }
+			else { 
+				if (toggleDrawSolid == 3) { this.drawWall(node.splitter, this.wallBufferTreeTexturedCorrected, node.id); }
+				else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			}
-			else { this.drawWall(node.splitter, this.wallBufferTree, node.id); }
 			this.iterateBSPTree(node.left);
 		}
 	}

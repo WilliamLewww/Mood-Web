@@ -163,11 +163,17 @@ function Joiner() {
 	}
 }
 
-function Wall(pointA, pointB, color = []) {
+function getRandomTextureIndex() {
+	return Math.floor(Math.random()*(textureCount));
+}
+
+function Wall(pointA, pointB, color = [], textureIndex = -1) {
 	this.pointA = pointA;
 	this.pointB = pointB;
 
 	this.color = color;
+	if (textureIndex == -1) { this.textureIndex = getRandomTextureIndex(); }
+	else { this.textureIndex = textureIndex; }
 
 	Wall.prototype.toString = function wallToString() {
 		return this.pointA[0] + "," + this.pointA[1] + "|" + this.pointB[0] + "," + this.pointB[1];

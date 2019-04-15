@@ -107,6 +107,7 @@ function Joiner() {
 					toggleDrawSolid += 1;
 					document.getElementById('indicator-texture-wireframe').setAttribute('class', 'red');
 					document.getElementById('indicator-texture-textured').setAttribute('class', 'green');
+					document.getElementById('interval-container').setAttribute('class', 'background-color-disabled');
 				}
 				else { 
 					if (toggleDrawSolid == 2) {
@@ -119,6 +120,7 @@ function Joiner() {
 							toggleDrawSolid = 0;
 							document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'red');
 							document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
+							document.getElementById('interval-container').setAttribute('class', 'background-color-enabled');
 						}
 					}
 				}
@@ -127,7 +129,7 @@ function Joiner() {
 		}
 		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }
 
-		if (canToggleDrawOrder && input_list.indexOf(88) != -1) {
+		if (canToggleDrawOrder && (toggleDrawSolid == 0 || toggleDrawSolid == 1) && input_list.indexOf(88) != -1) {
 			if (toggleDrawOrder == 0) {
 				toggleDrawOrder += 1;
 				document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-green');

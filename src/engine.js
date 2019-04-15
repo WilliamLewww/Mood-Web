@@ -2,7 +2,7 @@ var gl;
 var programList = [];
 var joiner;
 
-var textureCount = 5;
+var textureCount = 7;
 var textureSheet = false;
 var texture;
 

@@ -67,7 +67,23 @@ function Line(pointA, pointB, color = [255,0,0,255]) {
 	}
 }
 
-function QuadTexturedCorrected(pointA, pointB, pointC, pointD, img) {
+//10x5
+
+function getTextureCoordinates(index) {
+	var coordinates = [];
+
+	var x = parseInt(index % 10);
+	var y = parseInt(index / 10);
+
+	coordinates.push(x * .1);
+	coordinates.push((x * .1) + .1);
+	coordinates.push(y * .2);
+	coordinates.push((y * .2) + .2);
+
+	return coordinates;
+}
+
+function QuadTexturedCorrected(pointA, pointB, pointC, pointD, index) {
 	this.pointA = pointA;
 	this.pointB = pointB;
 	this.pointC = pointC;
@@ -82,20 +98,6 @@ function QuadTexturedCorrected(pointA, pointB, pointC, pointD, img) {
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
 	this.positionBuffer = gl.createBuffer();
 	this.textureBuffer = gl.createBuffer();
-
-  	var texture = gl.createTexture();
-  	gl.bindTexture(gl.TEXTURE_2D, texture);
-  	gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0, 0, 255, 255]));
-
-  	var image = new Image();
-	image.src = img;
-	image.addEventListener('load', function() {
-	    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA,gl.UNSIGNED_BYTE, image);
-		gl.generateMipmap(gl.TEXTURE_2D);
-	});
 
 	this.draw = () => {
 		gl.useProgram(this.program);
@@ -128,19 +130,19 @@ function QuadTexturedCorrected(pointA, pointB, pointC, pointD, img) {
 
 	this.getTextureArray = () => {
 		var q = calculateHomogeneousCoordinate(this.pointA[0], this.pointA[1], this.pointB[0], this.pointB[1], this.pointC[0], this.pointC[1], this.pointD[0], this.pointD[1]);
-
+		var coordinates = getTextureCoordinates(index);
 		return [
-            0 * q[3], 0 * q[3], q[3],
-	        0 * q[0], 1 * q[0], q[0],
-	        1 * q[2], 0 * q[2], q[2],
-	        1 * q[2], 0 * q[2], q[2],
-	        0 * q[0], 1 * q[0], q[0],
-	        1 * q[1], 1 * q[1], q[1],
+            coordinates[0] * q[3], coordinates[2] * q[3], q[3],
+	        coordinates[0] * q[0], coordinates[3] * q[0], q[0],
+	        coordinates[1] * q[2], coordinates[2] * q[2], q[2],
+	        coordinates[1] * q[2], coordinates[2] * q[2], q[2],
+	        coordinates[0] * q[0], coordinates[3] * q[0], q[0],
+	        coordinates[1] * q[1], coordinates[3] * q[1], q[1],
 		];
 	}
 }
 
-function QuadTextured(pointA, pointB, pointC, pointD, img) {
+function QuadTextured(pointA, pointB, pointC, pointD, index) {
 	this.pointA = pointA;
 	this.pointB = pointB;
 	this.pointC = pointC;
@@ -155,20 +157,6 @@ function QuadTextured(pointA, pointB, pointC, pointD, img) {
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
 	this.positionBuffer = gl.createBuffer();
 	this.textureBuffer = gl.createBuffer();
-
-  	var texture = gl.createTexture();
-  	gl.bindTexture(gl.TEXTURE_2D, texture);
-  	gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([0, 0, 255, 255]));
-
-  	var image = new Image();
-	image.src = img;
-	image.addEventListener('load', function() {
-	    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-		gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA,gl.UNSIGNED_BYTE, image);
-		gl.generateMipmap(gl.TEXTURE_2D);
-	});
 
 	this.draw = () => {
 		gl.useProgram(this.program);
@@ -200,13 +188,14 @@ function QuadTextured(pointA, pointB, pointC, pointD, img) {
 	}
 
 	this.getTextureArray = () => {
+		var coordinates = getTextureCoordinates(index);
 		return [
-            0, 0,
-	        0, 1,
-	        1, 0,
-	        1, 0,
-	        0, 1,
-	        1, 1,
+            coordinates[0], coordinates[2],
+	        coordinates[0], coordinates[3],
+	        coordinates[1], coordinates[2],
+	        coordinates[1], coordinates[2],
+	        coordinates[0], coordinates[3],
+	        coordinates[1], coordinates[3],
 		];
 	}
 }

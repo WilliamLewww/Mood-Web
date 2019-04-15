@@ -5,7 +5,8 @@
     <title>Binary Space Partitioning</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="background-color" onload="initialize()">
+<body class="background-color" onload="initializeTextures()">
+    <h1 id="loading-text">Loading Textures...</h1>
 	<canvas id="glCanvas" width="1000" height="600">
         Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
     </canvas>
@@ -27,7 +28,7 @@
         <input class="button-text-red" type="button" value="-" onclick="decreaseInterval(1.0)"> 
         <input class="button-text-green" type="button" value="+" onclick="increaseInterval(1.0)"> 
     </div>
-    <p class="instruction-text"><mark id="indicator-print-bsp" class="red">Enter</mark> - Print BSP Tree to Console</p>
+        <p class="instruction-text"><mark id="indicator-print-bsp" class="red">Enter</mark> - Print BSP Tree to Console</p>
     </div>
     <script src="src/engine.js"></script>
     <script src="src/shader_source.js"></script>

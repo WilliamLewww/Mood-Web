@@ -37,12 +37,12 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTextured = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
+			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],0));
 		}
 
 		this.wallBufferTexturedCorrected = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTexturedCorrected.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png"));
+			this.wallBufferTexturedCorrected.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],0));
 		}
 
 		this.wallBufferTree = Array(currentID);
@@ -66,14 +66,14 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		this.linkNodeWithWallTextured(node.left);
 		this.linkNodeWithWallTextured(node.right);
-		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
+		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],0)
 	}
 
 	this.linkNodeWithWallTexturedCorrected = (node) => {
 		if (node == null) { return; }
 		this.linkNodeWithWallTexturedCorrected(node.left);
 		this.linkNodeWithWallTexturedCorrected(node.right);
-		this.wallBufferTreeTexturedCorrected[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],"res/texture_sheet.png")
+		this.wallBufferTreeTexturedCorrected[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],0)
 	}
 
 	this.drawFirstToLast = (wallArray) => {

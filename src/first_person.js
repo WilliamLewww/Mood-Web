@@ -26,6 +26,10 @@ function decreaseFOV(value) {
 	}
 }
 
+function getRandomIndex() {
+	return Math.floor(Math.random()*(textureCount));
+}
+
 function FirstPerson(cameraProperties) {
 	this.cameraProperties = cameraProperties;
 
@@ -37,12 +41,12 @@ function FirstPerson(cameraProperties) {
 
 		this.wallBufferTextured = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],0));
+			this.wallBufferTextured.push(new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],getRandomIndex()));
 		}
 
 		this.wallBufferTexturedCorrected = [];
 		for (var x = 0; x < wallArray.length; x++) {
-			this.wallBufferTexturedCorrected.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],0));
+			this.wallBufferTexturedCorrected.push(new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],getRandomIndex()));
 		}
 
 		this.wallBufferTree = Array(currentID);
@@ -66,14 +70,14 @@ function FirstPerson(cameraProperties) {
 		if (node == null) { return; }
 		this.linkNodeWithWallTextured(node.left);
 		this.linkNodeWithWallTextured(node.right);
-		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],0)
+		this.wallBufferTreeTextured[node.id] = new QuadTextured([-1,-1],[-1,-1],[-1,-1],[-1,-1],getRandomIndex())
 	}
 
 	this.linkNodeWithWallTexturedCorrected = (node) => {
 		if (node == null) { return; }
 		this.linkNodeWithWallTexturedCorrected(node.left);
 		this.linkNodeWithWallTexturedCorrected(node.right);
-		this.wallBufferTreeTexturedCorrected[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],0)
+		this.wallBufferTreeTexturedCorrected[node.id] = new QuadTexturedCorrected([-1,-1],[-1,-1],[-1,-1],[-1,-1],getRandomIndex())
 	}
 
 	this.drawFirstToLast = (wallArray) => {

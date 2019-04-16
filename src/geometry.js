@@ -2,7 +2,7 @@ function denormalizeColor(color) {
 	return [color[0] / 255.0, color[1] / 255.0, color[2] / 255.0, color[3] / 255.0];
 }
 
-function crossMultiply(x1, y1, x2, y2) {
+function crossProduct(x1, y1, x2, y2) {
 	return (x1 * y2) - (y1 * x2);
 }
 
@@ -12,16 +12,16 @@ function calculateHomogeneousCoordinate(x1, y1, x2, y2, x3, y3, x4, y4) {
 	var ax = x3 - x1, ay = y3 - y1;
 	var bx = x4 - x2, by = y4 - y2;
 
-	var cross = crossMultiply(ax, ay, bx, by);
+	var cross = crossProduct(ax, ay, bx, by);
 
 	if (cross != 0) {
 		var cy = y1 - y2;
 		var cx = x1 - x2;
 
-		var s = crossMultiply(ax, ay, cx, cy) / cross;
+		var s = crossProduct(ax, ay, cx, cy) / cross;
 
 		if (s > 0 && s < 1) {
-			var t = crossMultiply(bx, by, cx, cy) / cross;
+			var t = crossProduct(bx, by, cx, cy) / cross;
 
 			if (t > 0 && t < 1) {
 				q.push(1 / (1 - t), 1 / (1 - s), 1 / t, 1 / s);

@@ -1,8 +1,11 @@
+var SCREEN_WIDTH;
+var SCREEN_HEIGHT;
+
 var gl;
 var programList = [];
 var joiner;
 
-var textureCount = 25;
+var textureCount = 27;
 var textureSheet = false;
 var texture;
 
@@ -22,9 +25,6 @@ function initializeTextures() {
     gl.generateMipmap(gl.TEXTURE_2D);
   });
 }
-
-var SCREEN_WIDTH;
-var SCREEN_HEIGHT;
 
 function initialize() {
   var canvas = document.getElementById("glCanvas");

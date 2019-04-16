@@ -113,8 +113,8 @@ function FirstPerson(cameraProperties) {
 		tx2 = (tx2 * s) - (ty2 * c);
 
 		if (tz1 > 0 || tz2 > 0) {
-			var i1 = getIntersection(tx1, tz1, tx2, tz2, -0.0001, 0.0001, -270.0, 5.0);
-			var i2 = getIntersection(tx1, tz1, tx2, tz2,  0.0001, 0.0001,  270.0, 5.0);
+			var i1 = getIntersection(tx1, tz1, tx2, tz2, 0, 0, -360.0, 5.0);
+			var i2 = getIntersection(tx1, tz1, tx2, tz2, 0, 0,  360.0, 5.0);
 
 			if (tz1 <= 0) {
 				if (i1[1] > 0) {
@@ -204,11 +204,11 @@ function degreeToRadians(degree) {
 
 function getIntersection(x1, y1, x2, y2, x3, y3, x4, y4) {
 	var position = [0,0];
-	position[0] = crossMultiply(x1, y1, x2, y2);
-	position[1] = crossMultiply(x3, y3, x4, y4);
-	var det		= crossMultiply(x1-x2, y1-y2, x3-x4, y3-y4);
-	position[0] = crossMultiply(position[0], x1-x2, position[1], x3-x4) / det;
-	position[1] = crossMultiply(position[0], y1-y2, position[1], y3-y4) / det;
+	position[0] = crossProduct(x1, y1, x2, y2);
+	position[1] = crossProduct(x3, y3, x4, y4);
+	var det		= crossProduct(x1-x2, y1-y2, x3-x4, y3-y4);
+	position[0] = crossProduct(position[0], x1-x2, position[1], x3-x4) / det;
+	position[1] = crossProduct(position[0], y1-y2, position[1], y3-y4) / det;
 
 	return position;
 }

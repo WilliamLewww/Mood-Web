@@ -112,6 +112,7 @@ function QuadTexturedCorrected(pointA, pointB, pointC, pointD, index) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getTextureArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.textureAttributeLocation, 3, gl.FLOAT, false, 0, 0);
 
+		gl.bindTexture(gl.TEXTURE_2D, texture);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
 		gl.uniform1i(this.textureLocation, 0);
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
@@ -171,6 +172,7 @@ function QuadTextured(pointA, pointB, pointC, pointD, index) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getTextureArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.textureAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 
+		gl.bindTexture(gl.TEXTURE_2D, texture);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
 		gl.uniform1i(this.textureLocation, 0);
 		gl.drawArrays(gl.TRIANGLES, 0, 6);

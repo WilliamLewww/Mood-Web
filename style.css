@@ -15,10 +15,16 @@ canvas {
 }
 
 .background-color-enabled {
+	border-style: dotted;
+	padding-top: 2px;
+	padding-bottom: 5px;
 	background-color: #baffbc ;
 }
 
 .background-color-disabled {
+	border-style: dotted;
+	padding-top: 2px;
+	padding-bottom: 5px;
 	background-color: #ffbaba ;
 }
 
@@ -83,13 +89,27 @@ canvas {
 }
 
 mark.green {
+	border-width: 2px;
+	border-style: dotted;
+	color: #FF0000;
+	background-color: #00FF00;
+}
+
+mark.red {
+	border-width: 2px;
+	border-style: dotted;
+	color: #00FF00;
+	background-color: #FF0000;
+}
+
+mark-instruction.green {
 	border-width: 5px;
 	border-style: double;
 	color: #FF0000;
 	background-color: #00FF00;
 }
 
-mark.red {
+mark-instruction.red {
 	border-width: 5px;
 	border-style: double;
 	color: #00FF00;

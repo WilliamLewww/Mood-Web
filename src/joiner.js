@@ -167,7 +167,8 @@ function Joiner() {
 		if (toggleDrawMethod == 2) { this.firstPerson.drawLastToFirst(this.wallArray); }
 
 		if (toggleDrawMethod == 0) { this.thirdPerson.drawUsingBSP(this.tree); }
-		else { this.thirdPerson.draw(); }
+		if (toggleDrawMethod == 1) { this.thirdPerson.drawFirstToLast(this.wallArray); }
+		if (toggleDrawMethod == 2) { this.thirdPerson.drawLastToFirst(this.wallArray); }
 	}
 }
 

@@ -13,7 +13,9 @@ function ThirdPerson(cameraProperties) {
 
 	this.initialize = (wallArray, tree) => {
 		this.background = new Rectangle(0, 0, 700, 700, [0,0,0,255]);
-		this.cameraEntity = new Rectangle(this.cameraProperties[0][0] - 5, this.cameraProperties[0][1] - 5, 10, 10, [255, 255, 255, 255]);
+		
+		this.cameraEntitySize = 15;
+		this.cameraEntity = new Rectangle(this.cameraProperties[0][0] - (this.cameraEntitySize / 2), this.cameraProperties[0][1] - (this.cameraEntitySize / 2), this.cameraEntitySize, this.cameraEntitySize, [255, 255, 255, 255]);
 
 		this.wallBuffer = [];
 		for (var x = 0; x < wallArray.length; x++) {
@@ -32,8 +34,8 @@ function ThirdPerson(cameraProperties) {
 	}
 
 	this.update = () => {
-		this.cameraEntity.x = this.cameraProperties[0][0] - 5;
-		this.cameraEntity.y = this.cameraProperties[0][1] - 5;
+		this.cameraEntity.x = this.cameraProperties[0][0] - (this.cameraEntitySize / 2);
+		this.cameraEntity.y = this.cameraProperties[0][1] - (this.cameraEntitySize / 2);
 	}
 
 	this.drawWall = (wall) => {
@@ -43,11 +45,22 @@ function ThirdPerson(cameraProperties) {
 		wall.draw();
 	}
 
-	this.draw = () => {
+	this.drawFirstToLast = () => {
 		if (toggleDrawOrder == 1) { currentAlphaThirdPerson = 255; }
 		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
 		this.background.draw();
 		for (var x = 0; x < this.wallBuffer.length; x++) {
+			this.drawWall(this.wallBuffer[x]);
+		}
+		this.cameraEntity.draw();
+
+	}
+
+	this.drawLastToFirst = () => {
+		if (toggleDrawOrder == 1) { currentAlphaThirdPerson = 255; }
+		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
+		this.background.draw();
+		for (var x = this.wallBuffer.length - 1; x >= 0; x--) {
 			this.drawWall(this.wallBuffer[x]);
 		}
 		this.cameraEntity.draw();

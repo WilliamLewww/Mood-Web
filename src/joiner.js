@@ -33,6 +33,9 @@ function Joiner() {
 
 		this.firstPerson = new FirstPerson(this.cameraProperties);
 		this.firstPerson.initialize(this.wallArray, this.tree);
+
+		this.thirdPerson = new ThirdPerson(this.cameraProperties);
+		this.thirdPerson.initialize(this.wallArray, this.tree);
 	}
 
 	this.update = () => {
@@ -154,12 +157,15 @@ function Joiner() {
 			canToggleDrawOrder = false;
 		}
 		if (!canToggleDrawOrder && input_list.indexOf(88) == -1) { canToggleDrawOrder = true; }
+
+		this.thirdPerson.update();
 	}
 
 	this.draw = () => {
 		if (toggleDrawMethod == 0) { this.firstPerson.drawUsingBSP(this.tree); }
 		if (toggleDrawMethod == 1) { this.firstPerson.drawFirstToLast(this.wallArray); }
 		if (toggleDrawMethod == 2) { this.firstPerson.drawLastToFirst(this.wallArray); }
+		this.thirdPerson.draw();
 	}
 }
 

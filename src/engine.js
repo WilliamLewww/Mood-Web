@@ -38,6 +38,7 @@ function initialize() {
   programList.push(createProgram(VERTEX_SHADER_1, FRAGMENT_SHADER_1));
   programList.push(createProgram(VERTEX_SHADER_2, FRAGMENT_SHADER_2));
   programList.push(createProgram(VERTEX_SHADER_3, FRAGMENT_SHADER_3));
+  programList.push(createProgram(VERTEX_SHADER_4, FRAGMENT_SHADER_4));
 
   joiner = new Joiner();
   joiner.initialize();

@@ -1,3 +1,5 @@
+var cameraSpeed = 1.0;
+
 var canPrintTree = true;
 
 var toggleDrawSolid = 0;
@@ -48,16 +50,25 @@ function Joiner() {
 		}
 		if (!canToggleMinimap && input_list.indexOf(17) == -1) { canToggleMinimap = true; }
 
+		if (input_list.indexOf(16) != -1) {
+			cameraSpeed = 2.0;
+			document.getElementById('indicator-move-fast').setAttribute('class', 'green');
+		}
+		else {
+			cameraSpeed = 1.0;
+			document.getElementById('indicator-move-fast').setAttribute('class', 'red');
+		}
+
 		if (input_list.indexOf(37) != -1 || input_list.indexOf(38) != -1 || input_list.indexOf(39) != -1 || input_list.indexOf(40) != -1) {
 			document.getElementById('indicator-move').setAttribute('class', 'green');
 		}
 		else { document.getElementById('indicator-move').setAttribute('class', 'red'); }
 
-		if (input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) { this.cameraAngle[0] += 1; }
-		if (input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) { this.cameraAngle[0] -= 1; }
+		if (input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) { this.cameraAngle[0] += 1 * cameraSpeed; }
+		if (input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) { this.cameraAngle[0] -= 1 * cameraSpeed; }
 		if (input_list.indexOf(38) != -1 && input_list.indexOf(40) == -1) {
-			this.cameraPosition[0] += Math.cos(degreeToRadians(-this.cameraAngle[0]));
-			this.cameraPosition[1] += Math.sin(degreeToRadians(-this.cameraAngle[0]));
+			this.cameraPosition[0] += Math.cos(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
+			this.cameraPosition[1] += Math.sin(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
 		}
 		if (input_list.indexOf(40) != -1 && input_list.indexOf(38) == -1) {
 			this.cameraPosition[0] -= Math.cos(degreeToRadians(-this.cameraAngle[0]));

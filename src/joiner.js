@@ -9,8 +9,6 @@ var canToggleDrawOrder = true;
 var toggleDrawMethod = 0;
 var canToggleDrawMethod = true;
 
-var canIncrementAlpha = true;
-
 var toggleMinimap = true;
 var canToggleMinimap = true;
 
@@ -42,21 +40,6 @@ function Joiner() {
 	}
 
 	this.update = () => {
-		if (canIncrementAlpha && (toggleDrawSolid == 0 || toggleDrawSolid == 1) ) {
-			if (input_list.indexOf(173) != -1) {
-				decreaseInterval(0.1);
-				canIncrementAlpha = false;
-			}
-			if (input_list.indexOf(61) != -1) {
-				increaseInterval(0.1);
-				canIncrementAlpha = false;
-			}
-		}
-
-		if (!canIncrementAlpha && input_list.indexOf(173) == -1 && input_list.indexOf(61) == -1) {
-			canIncrementAlpha = true;
-		}
-
 		if (canToggleMinimap && input_list.indexOf(17) != -1) {
 			toggleMinimap = !toggleMinimap;
 			if (toggleMinimap) { document.getElementById('indicator-third-person').setAttribute('class', 'green'); }

@@ -38,10 +38,10 @@ function ThirdPerson(cameraProperties) {
 		this.cameraEntity.y = this.cameraProperties[0][1] - (this.cameraEntitySize / 2);
 	}
 
-	this.drawWall = (wall) => {
+	this.drawWall = (wall, length) => {
 		if (toggleDrawOrder == 0) { wall.color[3] = 255; }
-		if (toggleDrawOrder == 1) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson -= alphaInterval; }
-		if (toggleDrawOrder == 2) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson += alphaInterval; }
+		if (toggleDrawOrder == 1) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson -= 255 / length; }
+		if (toggleDrawOrder == 2) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson += 255 / length; }
 		wall.draw();
 	}
 
@@ -50,7 +50,7 @@ function ThirdPerson(cameraProperties) {
 		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
 		this.background.draw();
 		for (var x = 0; x < this.wallBuffer.length; x++) {
-			this.drawWall(this.wallBuffer[x]);
+			this.drawWall(this.wallBuffer[x], this.wallBuffer.length);
 		}
 		this.cameraEntity.draw();
 
@@ -61,7 +61,7 @@ function ThirdPerson(cameraProperties) {
 		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
 		this.background.draw();
 		for (var x = this.wallBuffer.length - 1; x >= 0; x--) {
-			this.drawWall(this.wallBuffer[x]);
+			this.drawWall(this.wallBuffer[x], this.wallBuffer.length);
 		}
 		this.cameraEntity.draw();
 
@@ -79,12 +79,12 @@ function ThirdPerson(cameraProperties) {
 		if (node == null) { return; }
 		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
 			this.iterateBSPTree(node.left);
-			this.drawWall(this.wallBufferTree[node.id]);
+			this.drawWall(this.wallBufferTree[node.id], this.wallBufferTree.length);
 			this.iterateBSPTree(node.right);
 		}
 		else {
 			this.iterateBSPTree(node.right);
-			this.drawWall(this.wallBufferTree[node.id]);
+			this.drawWall(this.wallBufferTree[node.id], this.wallBufferTree.length);
 			this.iterateBSPTree(node.left);
 		}
 	}

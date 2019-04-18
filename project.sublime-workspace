@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"toggleDraw",
+				"toggleDrawOrder"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"canTo",
+				"canToggleMinimap"
+			],
+			[
+				"canTogg",
+				"canToggleMinimap"
+			],
+			[
+				"toggl",
+				"toggleMinimap"
+			],
+			[
+				"can",
+				"canToggleMinimap"
+			],
+			[
 				"camera",
 				"cameraEntity"
 			],
@@ -84,10 +108,6 @@
 				"programList"
 			],
 			[
-				"padd",
-				"padding-top\tproperty"
-			],
-			[
 				"Qu",
 				"QuadTextured"
 			],
@@ -126,18 +146,6 @@
 			[
 				"cant",
 				"canToggleDrawOrder"
-			],
-			[
-				"canTogg",
-				"canToggleDrawOrder"
-			],
-			[
-				"canTo",
-				"canToggleDrawOrder"
-			],
-			[
-				"toggl",
-				"toggleDrawSolid"
 			],
 			[
 				"Lin",
@@ -506,14 +514,6 @@
 			[
 				"el",
 				"elapsedTimeSeconds"
-			],
-			[
-				"ve",
-				"velocityX"
-			],
-			[
-				"v",
-				"v_position"
 			]
 		]
 	},
@@ -529,19 +529,10 @@
 			}
 		},
 		{
-			"file": "src/third_person.js",
-			"settings":
-			{
-				"buffer_size": 2618,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/joiner.js",
 			"settings":
 			{
-				"buffer_size": 7261,
+				"buffer_size": 8306,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,9 +541,18 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13113,
+				"buffer_size": 13431,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 1834,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -578,6 +578,15 @@
 			"settings":
 			{
 				"buffer_size": 3982,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/third_person.js",
+			"settings":
+			{
+				"buffer_size": 2944,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -1526,6 +1535,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"textureSheet",
+			"green",
+			"single",
+			"double",
+			"firstPerson",
 			"currentAlphaThirdPerson",
 			"currentAlpha",
 			"alphaInterval",
@@ -1637,7 +1651,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -1653,94 +1667,66 @@
 						"selection":
 						[
 							[
-								433,
-								433
+								5384,
+								5384
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 780.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/third_person.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2618,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								968,
-								968
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/joiner.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6590,
-								6590
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1531.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "index.html",
+					"buffer": 1,
+					"file": "src/joiner.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13113,
+						"buffer_size": 8306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								67,
-								67
+								460,
+								460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2801,
+								2801
 							]
 						],
 						"settings":
@@ -1750,10 +1736,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 318.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								761,
+								761
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1779,10 +1794,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 754.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1798,8 +1813,8 @@
 						"selection":
 						[
 							[
-								376,
-								376
+								245,
+								245
 							]
 						],
 						"settings":
@@ -1812,7 +1827,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1840,7 +1855,41 @@
 						"translation.y": 739.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "src/third_person.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								821,
+								821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1863,11 +1912,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1903,6 +1959,10 @@
 		"selected_items":
 		[
 			[
+				"css",
+				"style.css"
+			],
+			[
 				"firs",
 				"src\\first_person.js"
 			],
@@ -1929,10 +1989,6 @@
 			[
 				"",
 				"src\\first_person.js"
-			],
-			[
-				"css",
-				"style.css"
 			],
 			[
 				"en",

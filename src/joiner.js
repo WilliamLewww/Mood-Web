@@ -124,7 +124,6 @@ function Joiner() {
 					document.getElementById('interval-container').setAttribute('class', 'background-color-disabled');
 					
 					toggleDrawOrder = 0;
-					document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-red');
 					document.getElementById('indicator-order').setAttribute('class', 'red');
 					document.getElementById('indicator-order-first').setAttribute('class', 'red');
 					document.getElementById('indicator-order-last').setAttribute('class', 'red');
@@ -152,7 +151,6 @@ function Joiner() {
 		if (canToggleDrawOrder && (toggleDrawSolid == 0 || toggleDrawSolid == 1) && input_list.indexOf(88) != -1) {
 			if (toggleDrawOrder == 0) {
 				toggleDrawOrder += 1;
-				document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-green');
 				document.getElementById('indicator-order').setAttribute('class', 'green');
 				document.getElementById('indicator-order-first').setAttribute('class', 'green');
 			}
@@ -165,7 +163,6 @@ function Joiner() {
 				else { 
 					if (toggleDrawOrder == 2) {
 						toggleDrawOrder = 0;
-						document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-red');
 						document.getElementById('indicator-order').setAttribute('class', 'red');
 						document.getElementById('indicator-order-last').setAttribute('class', 'red');
 					}

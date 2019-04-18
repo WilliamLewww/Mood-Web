@@ -14,7 +14,7 @@ function ThirdPerson(cameraProperties) {
 	this.initialize = (wallArray, tree) => {
 		this.background = new Rectangle(0, 0, 700, 700, [0,0,0,255]);
 		
-		this.cameraEntitySize = 15;
+		this.cameraEntitySize = 12;
 		this.cameraEntity = new Rectangle(this.cameraProperties[0][0] - (this.cameraEntitySize / 2), this.cameraProperties[0][1] - (this.cameraEntitySize / 2), this.cameraEntitySize, this.cameraEntitySize, [255, 255, 255, 255]);
 
 		this.wallBuffer = [];

@@ -11,6 +11,9 @@ var canToggleDrawMethod = true;
 
 var canIncrementAlpha = true;
 
+var toggleMinimap = true;
+var canToggleMinimap = true;
+
 function Joiner() {
 	this.initialize = () => {
 		this.positionList = getVerticesFromID('map-data');
@@ -53,6 +56,14 @@ function Joiner() {
 		if (!canIncrementAlpha && input_list.indexOf(173) == -1 && input_list.indexOf(61) == -1) {
 			canIncrementAlpha = true;
 		}
+
+		if (canToggleMinimap && input_list.indexOf(17) != -1) {
+			toggleMinimap = !toggleMinimap;
+			if (toggleMinimap) { document.getElementById('indicator-third-person').setAttribute('class', 'green'); }
+			else { document.getElementById('indicator-third-person').setAttribute('class', 'red'); }
+			canToggleMinimap = false;
+		}
+		if (!canToggleMinimap && input_list.indexOf(17) == -1) { canToggleMinimap = true; }
 
 		if (input_list.indexOf(37) != -1 || input_list.indexOf(38) != -1 || input_list.indexOf(39) != -1 || input_list.indexOf(40) != -1) {
 			document.getElementById('indicator-move').setAttribute('class', 'green');
@@ -166,9 +177,11 @@ function Joiner() {
 		if (toggleDrawMethod == 1) { this.firstPerson.drawFirstToLast(this.wallArray); }
 		if (toggleDrawMethod == 2) { this.firstPerson.drawLastToFirst(this.wallArray); }
 
-		if (toggleDrawMethod == 0) { this.thirdPerson.drawUsingBSP(this.tree); }
-		if (toggleDrawMethod == 1) { this.thirdPerson.drawFirstToLast(this.wallArray); }
-		if (toggleDrawMethod == 2) { this.thirdPerson.drawLastToFirst(this.wallArray); }
+		if (toggleMinimap) {
+			if (toggleDrawMethod == 0) { this.thirdPerson.drawUsingBSP(this.tree); }
+			if (toggleDrawMethod == 1) { this.thirdPerson.drawFirstToLast(this.wallArray); }
+			if (toggleDrawMethod == 2) { this.thirdPerson.drawLastToFirst(this.wallArray); }
+		}
 	}
 }
 

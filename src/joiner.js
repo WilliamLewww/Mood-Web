@@ -42,7 +42,7 @@ function Joiner() {
 	}
 
 	this.update = () => {
-		if (canIncrementAlpha) {
+		if (canIncrementAlpha && (toggleDrawSolid == 0 || toggleDrawSolid == 1) ) {
 			if (input_list.indexOf(173) != -1) {
 				decreaseInterval(0.1);
 				canIncrementAlpha = false;
@@ -122,6 +122,12 @@ function Joiner() {
 					document.getElementById('indicator-texture-wireframe').setAttribute('class', 'red');
 					document.getElementById('indicator-texture-textured').setAttribute('class', 'green');
 					document.getElementById('interval-container').setAttribute('class', 'background-color-disabled');
+					
+					toggleDrawOrder = 0;
+					document.getElementById('alpha-interval').setAttribute('class', 'boxed-text-red');
+					document.getElementById('indicator-order').setAttribute('class', 'red');
+					document.getElementById('indicator-order-first').setAttribute('class', 'red');
+					document.getElementById('indicator-order-last').setAttribute('class', 'red');
 				}
 				else { 
 					if (toggleDrawSolid == 2) {

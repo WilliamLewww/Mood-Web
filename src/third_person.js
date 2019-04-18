@@ -1,6 +1,8 @@
 var THIRD_PERSON_SCALE_X = 0.3;
 var THIRD_PERSON_SCALE_Y = 0.3;
 
+var currentAlphaThirdPerson = 0;
+
 function setThirdPersonScale(value) {
 	THIRD_PERSON_SCALE_X = value;
 	THIRD_PERSON_SCALE_Y = value;
@@ -34,16 +36,27 @@ function ThirdPerson(cameraProperties) {
 		this.cameraEntity.y = this.cameraProperties[0][1] - 5;
 	}
 
+	this.drawWall = (wall) => {
+		if (toggleDrawOrder == 0) { wall.color[3] = 255; }
+		if (toggleDrawOrder == 1) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson -= alphaInterval; }
+		if (toggleDrawOrder == 2) { wall.color[3] = currentAlphaThirdPerson; currentAlphaThirdPerson += alphaInterval; }
+		wall.draw();
+	}
+
 	this.draw = () => {
+		if (toggleDrawOrder == 1) { currentAlphaThirdPerson = 255; }
+		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
 		this.background.draw();
 		for (var x = 0; x < this.wallBuffer.length; x++) {
-			this.wallBuffer[x].draw();
+			this.drawWall(this.wallBuffer[x]);
 		}
 		this.cameraEntity.draw();
 
 	}
 
 	this.drawUsingBSP = (tree) => {
+		if (toggleDrawOrder == 1) { currentAlphaThirdPerson = 255; }
+		if (toggleDrawOrder == 2) { currentAlphaThirdPerson = 0; }
 		this.background.draw();
 		this.iterateBSPTree(tree);
 		this.cameraEntity.draw();
@@ -53,12 +66,12 @@ function ThirdPerson(cameraProperties) {
 		if (node == null) { return; }
 		if (getWallPosition(node.splitter, this.cameraProperties[0]) == 1) {
 			this.iterateBSPTree(node.left);
-			this.wallBufferTree[node.id].draw();
+			this.drawWall(this.wallBufferTree[node.id]);
 			this.iterateBSPTree(node.right);
 		}
 		else {
 			this.iterateBSPTree(node.right);
-			this.wallBufferTree[node.id].draw();
+			this.drawWall(this.wallBufferTree[node.id]);
 			this.iterateBSPTree(node.left);
 		}
 	}

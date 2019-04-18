@@ -165,7 +165,9 @@ function Joiner() {
 		if (toggleDrawMethod == 0) { this.firstPerson.drawUsingBSP(this.tree); }
 		if (toggleDrawMethod == 1) { this.firstPerson.drawFirstToLast(this.wallArray); }
 		if (toggleDrawMethod == 2) { this.firstPerson.drawLastToFirst(this.wallArray); }
-		this.thirdPerson.draw();
+
+		if (toggleDrawMethod == 0) { this.thirdPerson.drawUsingBSP(this.tree); }
+		else { this.thirdPerson.draw(); }
 	}
 }
 

@@ -1,5 +1,7 @@
-var SCREEN_WIDTH;
-var SCREEN_HEIGHT;
+var SCREEN_WIDTH = 1000;
+var SCREEN_HEIGHT = 600;
+
+var scaleX, scaleY, scaleMin;
 
 var gl;
 var programList = [];
@@ -26,12 +28,21 @@ function initializeTextures() {
   });
 }
 
+function resize() {
+  scaleX = (window.innerWidth / (SCREEN_WIDTH + 50));
+  scaleY = (window.innerHeight / (SCREEN_HEIGHT + 50));
+  scaleMin = Math.min(scaleX, scaleY);
+
+  gl.canvas.width = (SCREEN_WIDTH * scaleMin);
+  gl.canvas.height = (SCREEN_HEIGHT * scaleMin);
+}
+
 function initialize() {
   var canvas = document.getElementById("glCanvas");
   gl = canvas.getContext("experimental-webgl");
 
-  SCREEN_WIDTH = gl.canvas.width;
-  SCREEN_HEIGHT = gl.canvas.height;
+  resize();
+  window.addEventListener('resize', resize);
 
   createListeners();
 

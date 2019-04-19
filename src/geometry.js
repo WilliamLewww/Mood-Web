@@ -56,7 +56,7 @@ function Line(pointA, pointB, color = [255,0,0,255]) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
-		gl.uniform2f(this.scaleLocation, THIRD_PERSON_SCALE_X, THIRD_PERSON_SCALE_Y);
+		gl.uniform2f(this.scaleLocation, THIRD_PERSON_SCALE_X * scaleMin, THIRD_PERSON_SCALE_Y * scaleMin);
 		gl.uniform4fv(this.colorLocation, denormalizeColor(this.color));
 		gl.drawArrays(gl.LINES, 0, 2);
 	}
@@ -81,6 +81,7 @@ function Rectangle(x, y, width, height, color = [255,0,0,255]) {
 
 	this.positionAttributeLocation = gl.getAttribLocation(this.program, 'position');
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
+	this.scaleLocation = gl.getUniformLocation(this.program, 'scale');
 	this.colorLocation = gl.getUniformLocation(this.program, 'color');
 
 	this.positionBuffer = gl.createBuffer();
@@ -92,7 +93,7 @@ function Rectangle(x, y, width, height, color = [255,0,0,255]) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
-		gl.uniform2f(this.scaleLocation, THIRD_PERSON_SCALE_X, THIRD_PERSON_SCALE_Y);
+		gl.uniform2f(this.scaleLocation, THIRD_PERSON_SCALE_X * scaleMin, THIRD_PERSON_SCALE_Y * scaleMin);
 		gl.uniform4fv(this.colorLocation, denormalizeColor(this.color));
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
@@ -138,6 +139,7 @@ function QuadTexturedCorrected(pointA, pointB, pointC, pointD, index) {
 	this.textureLocation = gl.getUniformLocation(this.program, "u_texture");
 
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
+	this.scaleWindowLocation = gl.getUniformLocation(this.program, 'scaleWindow');
 	this.positionBuffer = gl.createBuffer();
 	this.textureBuffer = gl.createBuffer();
 
@@ -156,6 +158,7 @@ function QuadTexturedCorrected(pointA, pointB, pointC, pointD, index) {
 
 		gl.bindTexture(gl.TEXTURE_2D, texture);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
+		gl.uniform1f(this.scaleWindowLocation, scaleMin);
 		gl.uniform1i(this.textureLocation, 0);
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
@@ -198,6 +201,7 @@ function QuadTextured(pointA, pointB, pointC, pointD, index) {
 	this.textureLocation = gl.getUniformLocation(this.program, "u_texture");
 
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
+	this.scaleWindowLocation = gl.getUniformLocation(this.program, 'scaleWindow');
 	this.positionBuffer = gl.createBuffer();
 	this.textureBuffer = gl.createBuffer();
 
@@ -216,6 +220,7 @@ function QuadTextured(pointA, pointB, pointC, pointD, index) {
 
 		gl.bindTexture(gl.TEXTURE_2D, texture);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
+		gl.uniform1f(this.scaleWindowLocation, scaleMin);
 		gl.uniform1i(this.textureLocation, 0);
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
@@ -256,6 +261,7 @@ function Quad(pointA, pointB, pointC, pointD, color = [255,0,0,255]) {
 
 	this.positionAttributeLocation = gl.getAttribLocation(this.program, 'position');
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
+	this.scaleWindowLocation = gl.getUniformLocation(this.program, 'scaleWindow');
 	this.colorLocation = gl.getUniformLocation(this.program, 'color');
 
 	this.positionBuffer = gl.createBuffer();
@@ -267,6 +273,7 @@ function Quad(pointA, pointB, pointC, pointD, color = [255,0,0,255]) {
 		gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.getPositionArray()), gl.STATIC_DRAW);
 		gl.vertexAttribPointer(this.positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
+		gl.uniform1f(this.scaleWindowLocation, scaleMin);
 		gl.uniform4fv(this.colorLocation, denormalizeColor(this.color));
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}

@@ -1,5 +1,4 @@
 var cameraSpeed = 1.0;
-
 var canPrintTree = true;
 
 var toggleDrawSolid = 0;

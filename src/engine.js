@@ -28,13 +28,24 @@ function initializeTextures() {
   });
 }
 
+function refresh() {
+  window.location.replace(window.location.href);
+}
+
 function resize() {
   scaleX = (window.innerWidth / (SCREEN_WIDTH + 50));
   scaleY = (window.innerHeight / (SCREEN_HEIGHT + 50));
   scaleMin = Math.min(scaleX, scaleY);
 
-  gl.canvas.width = (SCREEN_WIDTH * scaleMin);
-  gl.canvas.height = (SCREEN_HEIGHT * scaleMin);
+  if (scaleMin <= 1.0) {
+    gl.canvas.width = (SCREEN_WIDTH * scaleMin);
+    gl.canvas.height = (SCREEN_HEIGHT * scaleMin);
+  }
+  else {
+    scaleMin = 1.0;
+    gl.canvas.width = SCREEN_WIDTH;
+    gl.canvas.height = SCREEN_HEIGHT;
+  }
 }
 
 function initialize() {
@@ -42,7 +53,7 @@ function initialize() {
   gl = canvas.getContext("experimental-webgl");
 
   resize();
-  window.addEventListener('resize', resize);
+  window.addEventListener('resize', refresh);
 
   createListeners();
 

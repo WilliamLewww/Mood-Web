@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"scal",
+				"scaleMin"
+			],
+			[
+				"SCREE",
+				"SCREEN_HEIGHT\t(engine.js)"
+			],
+			[
+				"scale",
+				"scaleMin\t(engine.js)"
+			],
+			[
+				"SCRE",
+				"SCREEN_HEIGHT"
+			],
+			[
+				"res",
+				"resize"
+			],
+			[
+				"camera",
+				"cameraSpeed"
+			],
+			[
+				"came",
+				"cameraSpeed"
+			],
+			[
+				"cam",
+				"cameraSpeed"
+			],
+			[
+				"input",
+				"input_list"
+			],
+			[
+				"wallBU",
+				"wallBufferTree"
+			],
+			[
+				"wall",
+				"wallBuffer"
+			],
+			[
 				"toggleDraw",
 				"toggleDrawOrder"
 			],
@@ -26,14 +70,6 @@
 			[
 				"can",
 				"canToggleMinimap"
-			],
-			[
-				"camera",
-				"cameraEntity"
-			],
-			[
-				"cam",
-				"cameraEntity"
 			],
 			[
 				"THI",
@@ -62,10 +98,6 @@
 			[
 				"Texture",
 				"TEXTURE_2D\t(engine.js)"
-			],
-			[
-				"SCREE",
-				"SCREEN_HEIGHT\t(engine.js)"
 			],
 			[
 				"texture",
@@ -162,10 +194,6 @@
 			[
 				"buf",
 				"wallBufferTree"
-			],
-			[
-				"wall",
-				"wallArray"
 			],
 			[
 				"lin",
@@ -486,34 +514,6 @@
 			[
 				"reg",
 				"registers"
-			],
-			[
-				"val",
-				"validRegisterB"
-			],
-			[
-				"velo",
-				"velocityY"
-			],
-			[
-				"colorRe",
-				"colorRegisterSelected"
-			],
-			[
-				"colorR",
-				"colorRegisterSelected"
-			],
-			[
-				"re",
-				"region"
-			],
-			[
-				"SDL",
-				"SDLK_LEFT"
-			],
-			[
-				"el",
-				"elapsedTimeSeconds"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/first_person.js",
 			"settings":
 			{
-				"buffer_size": 7069,
+				"buffer_size": 6730,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "src/joiner.js",
 			"settings":
 			{
-				"buffer_size": 8306,
+				"buffer_size": 7935,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +541,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 13431,
+				"buffer_size": 13212,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -550,7 +550,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 1834,
+				"buffer_size": 1532,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,7 +559,7 @@
 			"file": "src/geometry.js",
 			"settings":
 			{
-				"buffer_size": 10142,
+				"buffer_size": 10514,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -568,16 +568,7 @@
 			"file": "src/engine.js",
 			"settings":
 			{
-				"buffer_size": 2718,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/shader_source.js",
-			"settings":
-			{
-				"buffer_size": 3982,
+				"buffer_size": 3232,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -586,7 +577,16 @@
 			"file": "src/third_person.js",
 			"settings":
 			{
-				"buffer_size": 2944,
+				"buffer_size": 3054,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/shader_source.js",
+			"settings":
+			{
+				"buffer_size": 4180,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -1389,6 +1389,7 @@
 	],
 	"file_history":
 	[
+		"/C/Projects/Mood-Web/src/shader_source.js",
 		"/C/Projects/Mood-Web/src/geometry.js",
 		"/C/Users/William/AppData/Local/Temp/citation-13430184.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-271383193.bib.txt",
@@ -1398,7 +1399,6 @@
 		"/C/Projects/Mood-Web/src/first_person.js",
 		"/C/Projects/Mood-Web/src/joiner.js",
 		"/C/Projects/Mood-Web/src/engine.js",
-		"/C/Projects/Mood-Web/src/shader_source.js",
 		"/C/Projects/Mood-Web/index.html",
 		"/C/Projects/Mood-Web/style.css",
 		"/C/Users/William/Desktop/hellen.py",
@@ -1535,6 +1535,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gl.canvas.height",
+			"gl.canvas.width",
+			"THIRD_PERSON_SCALE_X",
+			"programList[3]",
+			"programList",
+			"canIncrementAlpha",
+			"input_list",
+			"increaseInterval",
+			"decreaseInterval",
+			"alpha-inter",
+			"instruction",
+			"alphaInterval",
+			"buffer",
+			"alphaInterval",
 			"textureSheet",
 			"green",
 			"single",
@@ -1660,15 +1674,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7069,
+						"buffer_size": 6730,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5384,
-								5384
+								21,
+								21
 							]
 						],
 						"settings":
@@ -1680,7 +1694,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1689,15 +1703,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8306,
+						"buffer_size": 7935,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								460,
-								460
+								276,
+								276
 							]
 						],
 						"settings":
@@ -1718,15 +1732,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13431,
+						"buffer_size": 13212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2801,
-								2801
+								2183,
+								2183
 							]
 						],
 						"settings":
@@ -1736,10 +1750,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 432.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1748,15 +1762,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1834,
+						"buffer_size": 1532,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								761,
-								761
+								427,
+								427
 							]
 						],
 						"settings":
@@ -1777,15 +1791,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10142,
+						"buffer_size": 10514,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3243,
-								3243
+								1519,
+								1519
 							]
 						],
 						"settings":
@@ -1794,10 +1808,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 754.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1806,15 +1820,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2718,
+						"buffer_size": 3232,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								245,
-								245
+								1096,
+								1096
 							]
 						],
 						"settings":
@@ -1824,38 +1838,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 336.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/shader_source.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3982,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3467,
-								3467
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 739.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1865,20 +1851,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "src/third_person.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2944,
+						"buffer_size": 3054,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								821,
-								821
+								1682,
+								1682
 							]
 						],
 						"settings":
@@ -1889,7 +1875,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/shader_source.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3480,
+								3480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1959,6 +1973,18 @@
 		"selected_items":
 		[
 			[
+				"sha",
+				"src\\shader_source.js"
+			],
+			[
+				"en",
+				"src\\engine.js"
+			],
+			[
+				"shad",
+				"src\\shader_source.js"
+			],
+			[
 				"css",
 				"style.css"
 			],
@@ -1975,10 +2001,6 @@
 				"src\\geometry.js"
 			],
 			[
-				"sha",
-				"src\\shader_source.js"
-			],
-			[
 				"eng",
 				"src\\engine.js"
 			],
@@ -1989,10 +2011,6 @@
 			[
 				"",
 				"src\\first_person.js"
-			],
-			[
-				"en",
-				"src\\engine.js"
 			],
 			[
 				"ge",

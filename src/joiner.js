@@ -63,15 +63,15 @@ function Joiner() {
 		}
 		else { document.getElementById('indicator-move').setAttribute('class', 'red'); }
 
-		if (input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) { this.cameraAngle[0] += 1 * cameraSpeed; }
-		if (input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) { this.cameraAngle[0] -= 1 * cameraSpeed; }
-		if (input_list.indexOf(38) != -1 && input_list.indexOf(40) == -1) {
+		if ((input_list.indexOf(37) != -1 && input_list.indexOf(39) == -1) || touch_position[0] == -1) { this.cameraAngle[0] += 1 * cameraSpeed; }
+		if ((input_list.indexOf(39) != -1 && input_list.indexOf(37) == -1) || touch_position[0] == 1) { this.cameraAngle[0] -= 1 * cameraSpeed; }
+		if ((input_list.indexOf(38) != -1 && input_list.indexOf(40) == -1) || touch_position[1] == -1) {
 			this.cameraPosition[0] += Math.cos(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
 			this.cameraPosition[1] += Math.sin(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
 		}
-		if (input_list.indexOf(40) != -1 && input_list.indexOf(38) == -1) {
-			this.cameraPosition[0] -= Math.cos(degreeToRadians(-this.cameraAngle[0]));
-			this.cameraPosition[1] -= Math.sin(degreeToRadians(-this.cameraAngle[0]));
+		if ((input_list.indexOf(40) != -1 && input_list.indexOf(38) == -1) || touch_position[1] == 1) {
+			this.cameraPosition[0] -= Math.cos(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
+			this.cameraPosition[1] -= Math.sin(degreeToRadians(-this.cameraAngle[0])) * cameraSpeed;
 		}
 
 		if (canPrintTree && input_list.indexOf(13) != -1) {

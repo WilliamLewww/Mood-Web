@@ -1,4 +1,5 @@
 canvas {
+	margin-top: 10px;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
@@ -17,13 +18,21 @@ canvas {
 
 .background-color-enabled {
 	border-style: dotted;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: -8px;
+	margin-bottom: 2px;
 	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-bottom: -20px;
 	background-color: #baffbc ;
 }
 
 .background-color-disabled {
 	border-style: dotted;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: -8px;
+	margin-bottom: 2px;
 	padding-top: 7px;
 	padding-bottom: 7px;
 	background-color: #ffbaba ;
@@ -34,22 +43,25 @@ canvas {
 	text-align: center;
 	border-width: 5px;
 	border-style: inset;
+	margin-top: 10px;
 	background-color: #c9dcff ;
 }
 
 .top-instruction {
 	margin-top: 10px;
+	margin-bottom: 8px;
 }
 
 .instruction-box {
 	border-style: ridge;
 	border-width: 8px;
-	margin-top: -10px;
+	margin-top: -5px;
 	background-color: #c9dcff ;
 }
 
 .instruction-text {
 	padding-left: 10px;
+	margin-top: 5px;
 }
 
 .button-text-green {

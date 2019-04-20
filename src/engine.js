@@ -110,18 +110,18 @@ function createListeners() {
   window.addEventListener('resize', refresh);
 
   gl.canvas.addEventListener("touchstart", event => {
-    if (event.touches[0].clientX < gl.canvas.width / 3) { touch_position[0] = -1; }
-    if (event.touches[0].clientX > gl.canvas.width * (2 / 3)) { touch_position[0] = 1; }
-    if (event.touches[0].clientY < gl.canvas.height / 3) { touch_position[1] = -1; }
-    if (event.touches[0].clientY > gl.canvas.height * (2 / 3)) { touch_position[1] = 1; }
+    if (event.touches[0].clientX < gl.canvas.width / 4) { touch_position[0] = -1; }
+    if (event.touches[0].clientX > gl.canvas.width * (3 / 4)) { touch_position[0] = 1; }
+    if (event.touches[0].clientY < gl.canvas.height / 4) { touch_position[1] = -1; }
+    if (event.touches[0].clientY > gl.canvas.height * (3 / 4)) { touch_position[1] = 1; }
   });
 
   gl.canvas.addEventListener("touchmove", event => {
     touch_position = [0, 0];
-    if (event.touches[0].clientX < gl.canvas.width / 3) { touch_position[0] = -1; }
-    if (event.touches[0].clientX > gl.canvas.width * (2 / 3)) { touch_position[0] = 1; }
-    if (event.touches[0].clientY < gl.canvas.height / 3) { touch_position[1] = -1; }
-    if (event.touches[0].clientY > gl.canvas.height * (2 / 3)) { touch_position[1] = 1; }
+    if (event.touches[0].clientX < gl.canvas.width / 4) { touch_position[0] = -1; }
+    if (event.touches[0].clientX > gl.canvas.width * (3 / 4)) { touch_position[0] = 1; }
+    if (event.touches[0].clientY < gl.canvas.height / 4) { touch_position[1] = -1; }
+    if (event.touches[0].clientY > gl.canvas.height * (3 / 4)) { touch_position[1] = 1; }
   });
 
   gl.canvas.addEventListener("touchend", event => {

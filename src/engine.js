@@ -136,4 +136,26 @@ function createListeners() {
   document.addEventListener('keyup', event => {
     input_list.splice(input_list.indexOf(event.keyCode), 1);
   });
+
+  document.getElementById('button-space').addEventListener('click', event => {
+    joiner.handleDrawMethod();
+  });
+
+  document.getElementById('button-z').addEventListener('click', event => {
+    joiner.handleTexture();
+  });
+
+  document.getElementById('indicator-order').addEventListener('click', event => {
+    if ((toggleDrawSolid == 0 || toggleDrawSolid == 1)) {
+      joiner.handleDrawOrder();
+    }
+  });
+
+  document.getElementById('indicator-print-bsp').addEventListener('click', event => {
+    joiner.handlePrintTree();
+  });
+
+  document.getElementById('indicator-third-person').addEventListener('click', event => {
+    joiner.handleMinimap();
+  });
 }

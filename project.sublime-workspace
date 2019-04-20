@@ -550,7 +550,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 1792,
+				"buffer_size": 1794,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -1676,7 +1676,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1750,8 +1750,8 @@
 						"selection":
 						[
 							[
-								1476,
-								1476
+								1344,
+								1344
 							]
 						],
 						"settings":
@@ -1764,7 +1764,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1773,15 +1773,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1792,
+						"buffer_size": 1794,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1213,
-								1216
+								738,
+								738
 							]
 						],
 						"settings":
@@ -1790,10 +1790,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 547.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{

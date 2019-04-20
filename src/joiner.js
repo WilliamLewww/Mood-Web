@@ -42,9 +42,7 @@ function Joiner() {
 
 	this.update = () => {
 		if (canToggleMinimap && input_list.indexOf(17) != -1) {
-			toggleMinimap = !toggleMinimap;
-			if (toggleMinimap) { document.getElementById('indicator-third-person').setAttribute('class', 'green'); }
-			else { document.getElementById('indicator-third-person').setAttribute('class', 'red'); }
+			this.handleMinimap();
 			canToggleMinimap = false;
 		}
 		if (!canToggleMinimap && input_list.indexOf(17) == -1) { canToggleMinimap = true; }
@@ -75,92 +73,22 @@ function Joiner() {
 		}
 
 		if (canPrintTree && input_list.indexOf(13) != -1) {
-			printBinaryTree(this.tree);
-			canPrintTree = false;
-			document.getElementById('indicator-print-bsp').setAttribute('class', 'green');
+			this.handlePrintTree();
 		}
 		if (canToggleDrawMethod && input_list.indexOf(32) != -1) {
-			if (toggleDrawMethod == 0) {
-				toggleDrawMethod += 1;
-				document.getElementById('indicator-method-bsp').setAttribute('class', 'red');
-				document.getElementById('indicator-method-first').setAttribute('class', 'green');
-			}
-			else {
-				if (toggleDrawMethod == 1) {
-					toggleDrawMethod += 1;
-					document.getElementById('indicator-method-first').setAttribute('class', 'red');
-					document.getElementById('indicator-method-last').setAttribute('class', 'green');
-				}
-				else { 
-					if (toggleDrawMethod == 2) {
-						toggleDrawMethod = 0;
-						document.getElementById('indicator-method-last').setAttribute('class', 'red');
-						document.getElementById('indicator-method-bsp').setAttribute('class', 'green');
-					}
-				}
-			}
+			this.handleDrawMethod();
 			canToggleDrawMethod = false;
 		}
 		if (!canToggleDrawMethod && input_list.indexOf(32) == -1) { canToggleDrawMethod = true; }
 
 		if (canToggleDrawSolid && input_list.indexOf(90) != -1) {
-			if (toggleDrawSolid == 0) {
-				toggleDrawSolid += 1;
-				document.getElementById('indicator-texture-solid').setAttribute('class', 'red');
-				document.getElementById('indicator-texture-wireframe').setAttribute('class', 'green');
-			}
-			else {
-				if (toggleDrawSolid == 1) {
-					toggleDrawSolid += 1;
-					document.getElementById('indicator-texture-wireframe').setAttribute('class', 'red');
-					document.getElementById('indicator-texture-textured').setAttribute('class', 'green');
-					document.getElementById('interval-container').setAttribute('class', 'background-color-disabled');
-					
-					toggleDrawOrder = 0;
-					document.getElementById('indicator-order').setAttribute('class', 'red');
-					document.getElementById('indicator-order-first').setAttribute('class', 'red');
-					document.getElementById('indicator-order-last').setAttribute('class', 'red');
-				}
-				else { 
-					if (toggleDrawSolid == 2) {
-						toggleDrawSolid += 1;
-						document.getElementById('indicator-texture-textured').setAttribute('class', 'red');
-						document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'green');
-					}
-					else {
-						if (toggleDrawSolid == 3) {
-							toggleDrawSolid = 0;
-							document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'red');
-							document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
-							document.getElementById('interval-container').setAttribute('class', 'background-color-enabled');
-						}
-					}
-				}
-			}
+			this.handleTexture();
 			canToggleDrawSolid = false;
 		}
 		if (!canToggleDrawSolid && input_list.indexOf(90) == -1) { canToggleDrawSolid = true; }
 
 		if (canToggleDrawOrder && (toggleDrawSolid == 0 || toggleDrawSolid == 1) && input_list.indexOf(88) != -1) {
-			if (toggleDrawOrder == 0) {
-				toggleDrawOrder += 1;
-				document.getElementById('indicator-order').setAttribute('class', 'green');
-				document.getElementById('indicator-order-first').setAttribute('class', 'green');
-			}
-			else {
-				if (toggleDrawOrder == 1) {
-					toggleDrawOrder += 1;
-					document.getElementById('indicator-order-first').setAttribute('class', 'red');
-					document.getElementById('indicator-order-last').setAttribute('class', 'green');
-				}
-				else { 
-					if (toggleDrawOrder == 2) {
-						toggleDrawOrder = 0;
-						document.getElementById('indicator-order').setAttribute('class', 'red');
-						document.getElementById('indicator-order-last').setAttribute('class', 'red');
-					}
-				}
-			}
+			this.handleDrawOrder();
 			canToggleDrawOrder = false;
 		}
 		if (!canToggleDrawOrder && input_list.indexOf(88) == -1) { canToggleDrawOrder = true; }
@@ -178,6 +106,98 @@ function Joiner() {
 			if (toggleDrawMethod == 1) { this.thirdPerson.drawFirstToLast(this.wallArray); }
 			if (toggleDrawMethod == 2) { this.thirdPerson.drawLastToFirst(this.wallArray); }
 		}
+	}
+
+	this.handlePrintTree = () => {
+	  printBinaryTree(this.tree);
+	  canPrintTree = false;
+	  document.getElementById('indicator-print-bsp').setAttribute('class', 'green');
+	}
+
+	this.handleDrawMethod = () => {
+	  if (toggleDrawMethod == 0) {
+	    toggleDrawMethod += 1;
+	    document.getElementById('indicator-method-bsp').setAttribute('class', 'red');
+	    document.getElementById('indicator-method-first').setAttribute('class', 'green');
+	  }
+	  else {
+	    if (toggleDrawMethod == 1) {
+	      toggleDrawMethod += 1;
+	      document.getElementById('indicator-method-first').setAttribute('class', 'red');
+	      document.getElementById('indicator-method-last').setAttribute('class', 'green');
+	    }
+	    else { 
+	      if (toggleDrawMethod == 2) {
+	        toggleDrawMethod = 0;
+	        document.getElementById('indicator-method-last').setAttribute('class', 'red');
+	        document.getElementById('indicator-method-bsp').setAttribute('class', 'green');
+	      }
+	    }
+	  }
+	}
+
+	this.handleTexture = () => {
+		if (toggleDrawSolid == 0) {
+			toggleDrawSolid += 1;
+			document.getElementById('indicator-texture-solid').setAttribute('class', 'red');
+			document.getElementById('indicator-texture-wireframe').setAttribute('class', 'green');
+		}
+		else {
+			if (toggleDrawSolid == 1) {
+				toggleDrawSolid += 1;
+				document.getElementById('indicator-texture-wireframe').setAttribute('class', 'red');
+				document.getElementById('indicator-texture-textured').setAttribute('class', 'green');
+				document.getElementById('interval-container').setAttribute('class', 'background-color-disabled');
+				
+				toggleDrawOrder = 0;
+				document.getElementById('indicator-order').setAttribute('class', 'red');
+				document.getElementById('indicator-order-first').setAttribute('class', 'red');
+				document.getElementById('indicator-order-last').setAttribute('class', 'red');
+			}
+			else { 
+				if (toggleDrawSolid == 2) {
+					toggleDrawSolid += 1;
+					document.getElementById('indicator-texture-textured').setAttribute('class', 'red');
+					document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'green');
+				}
+				else {
+					if (toggleDrawSolid == 3) {
+						toggleDrawSolid = 0;
+						document.getElementById('indicator-texture-textured-interpolated').setAttribute('class', 'red');
+						document.getElementById('indicator-texture-solid').setAttribute('class', 'green');
+						document.getElementById('interval-container').setAttribute('class', 'background-color-enabled');
+					}
+				}
+			}
+		}
+	}
+
+	this.handleDrawOrder = () => {
+		if (toggleDrawOrder == 0) {
+			toggleDrawOrder += 1;
+			document.getElementById('indicator-order').setAttribute('class', 'green');
+			document.getElementById('indicator-order-first').setAttribute('class', 'green');
+		}
+		else {
+			if (toggleDrawOrder == 1) {
+				toggleDrawOrder += 1;
+				document.getElementById('indicator-order-first').setAttribute('class', 'red');
+				document.getElementById('indicator-order-last').setAttribute('class', 'green');
+			}
+			else { 
+				if (toggleDrawOrder == 2) {
+					toggleDrawOrder = 0;
+					document.getElementById('indicator-order').setAttribute('class', 'red');
+					document.getElementById('indicator-order-last').setAttribute('class', 'red');
+				}
+			}
+		}
+	}
+
+	this.handleMinimap = () => {
+		toggleMinimap = !toggleMinimap;
+		if (toggleMinimap) { document.getElementById('indicator-third-person').setAttribute('class', 'green'); }
+		else { document.getElementById('indicator-third-person').setAttribute('class', 'red'); }
 	}
 }
 

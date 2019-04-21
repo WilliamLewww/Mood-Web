@@ -28,10 +28,6 @@ function initializeTextures() {
   });
 }
 
-function refresh() {
-  window.location.replace(window.location.href);
-}
-
 function resize() {
   scaleX = (window.innerWidth / (SCREEN_WIDTH + 50));
   scaleY = (window.innerHeight / (SCREEN_HEIGHT + 50));
@@ -107,21 +103,19 @@ function createProgram(vertexSource, fragmentSource) {
 var input_list = [];
 var touch_position = [0, 0];
 function createListeners() {
-  window.addEventListener('resize', refresh);
-
   gl.canvas.addEventListener("touchstart", event => {
-    if (event.touches[0].clientX < gl.canvas.width / 4) { touch_position[0] = -1; }
-    if (event.touches[0].clientX > gl.canvas.width * (3 / 4)) { touch_position[0] = 1; }
-    if (event.touches[0].clientY < gl.canvas.height / 4) { touch_position[1] = -1; }
-    if (event.touches[0].clientY > gl.canvas.height * (3 / 4)) { touch_position[1] = 1; }
+    if (event.touches[0].clientX < gl.canvas.offsetLeft + (gl.canvas.width / 4)) { touch_position[0] = -1; }
+    if (event.touches[0].clientX > gl.canvas.offsetLeft + (gl.canvas.width * (3 / 4))) { touch_position[0] = 1; }
+    if (event.touches[0].clientY < gl.canvas.offsetTop + (gl.canvas.height / 4)) { touch_position[1] = -1; }
+    if (event.touches[0].clientY > gl.canvas.offsetTop + (gl.canvas.height * (3 / 4))) { touch_position[1] = 1; }
   });
 
   gl.canvas.addEventListener("touchmove", event => {
     touch_position = [0, 0];
-    if (event.touches[0].clientX < gl.canvas.width / 4) { touch_position[0] = -1; }
-    if (event.touches[0].clientX > gl.canvas.width * (3 / 4)) { touch_position[0] = 1; }
-    if (event.touches[0].clientY < gl.canvas.height / 4) { touch_position[1] = -1; }
-    if (event.touches[0].clientY > gl.canvas.height * (3 / 4)) { touch_position[1] = 1; }
+    if (event.touches[0].clientX < gl.canvas.offsetLeft + (gl.canvas.width / 4)) { touch_position[0] = -1; }
+    if (event.touches[0].clientX > gl.canvas.offsetLeft + (gl.canvas.width * (3 / 4))) { touch_position[0] = 1; }
+    if (event.touches[0].clientY < gl.canvas.offsetTop + (gl.canvas.height / 4)) { touch_position[1] = -1; }
+    if (event.touches[0].clientY > gl.canvas.offsetTop + (gl.canvas.height * (3 / 4))) { touch_position[1] = 1; }
   });
 
   gl.canvas.addEventListener("touchend", event => {

@@ -520,24 +520,6 @@
 	"buffers":
 	[
 		{
-			"file": "src/first_person.js",
-			"settings":
-			{
-				"buffer_size": 6730,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 14819,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "style.css",
 			"settings":
 			{
@@ -556,11 +538,28 @@
 			}
 		},
 		{
-			"file": "src/joiner.js",
+			"file": "src/engine.js",
 			"settings":
 			{
-				"buffer_size": 8357,
+				"buffer_size": 4930,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 15605,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/shader_source.js",
+			"settings":
+			{
+				"buffer_size": 4180,
 				"line_ending": "Windows"
 			}
 		},
@@ -574,12 +573,22 @@
 			}
 		},
 		{
-			"file": "src/shader_source.js",
+			"file": "src/joiner.js",
 			"settings":
 			{
-				"buffer_size": 4180,
+				"buffer_size": 8357,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 11 files for \"foreach\" (regex)\n\nC:\\Projects\\Mood-Web\\src\\data_parse.js:\n   23  \tvar colors = [];\n   24  \n   25: \tdata.forEach(color => {\n   26  \t\tcolors.push(parseFloat(color));\n   27  \t});\n\n1 match in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 219,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
@@ -1380,25 +1389,25 @@
 	],
 	"file_history":
 	[
-		"/C/Projects/Mood-Web/style.css",
 		"/C/Projects/Mood-Web/src/shader_source.js",
+		"/C/Projects/Mood-Web/index.html",
+		"/C/Projects/Mood-Web/src/first_person.js",
+		"/C/Projects/Mood-Web/project.sublime-project",
+		"/C/Projects/Mood-Web/style.css",
 		"/C/Projects/Mood-Web/src/geometry.js",
 		"/C/Users/William/AppData/Local/Temp/citation-13430184.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-271383193.bib.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-271383193.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-283497304.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-271383193.ris.txt",
-		"/C/Projects/Mood-Web/src/first_person.js",
 		"/C/Projects/Mood-Web/src/joiner.js",
 		"/C/Projects/Mood-Web/src/engine.js",
-		"/C/Projects/Mood-Web/index.html",
 		"/C/Users/William/Desktop/hellen.py",
 		"/C/Users/William/Desktop/scripts/test.js",
 		"/C/Users/William/Desktop/Coding Resources.txt",
 		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
 		"/C/Users/William/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
 		"/C/Projects/Mood-Web/src/data_parse.js",
-		"/C/Projects/Mood-Web/project.sublime-project",
 		"/C/Users/William/Desktop/jquery_test.js",
 		"/C/Users/William/.software/CodeTime.txt",
 		"/C/Users/William/Downloads/dyArray.h",
@@ -1526,6 +1535,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"foreach",
+			"uniform1f",
+			"scalemin",
+			"hidden-",
+			"gl.canvas.width",
+			"refresh",
 			"canToggleDrawMethod",
 			"padding",
 			"left",
@@ -1647,13 +1662,7 @@
 			"wallBuffer",
 			"wallDrawObject",
 			"'",
-			"int",
-			"positionList",
-			"parseInt",
-			"<<",
-			"printString",
-			"top",
-			"left"
+			"int"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1671,24 +1680,53 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/first_person.js",
+					"file": "style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6730,
+						"buffer_size": 2231,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21,
-								21
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/geometry.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								0
 							]
 						],
 						"settings":
@@ -1697,27 +1735,57 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 224.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "index.html",
+					"buffer": 2,
+					"file": "src/engine.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14819,
+						"buffer_size": 4930,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1378,
-								1378
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1403,
+								1403
 							]
 						],
 						"settings":
@@ -1730,94 +1798,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "style.css",
+					"buffer": 4,
+					"file": "src/shader_source.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2231,
+						"buffer_size": 4180,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								174
+								624,
+								624
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/geometry.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1519,
-								1519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1102.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/joiner.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3643,
-								3643
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 842.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1833,47 +1842,125 @@
 						"selection":
 						[
 							[
-								823,
-								823
+								2331,
+								2343
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "src/shader_source.js",
+					"file": "src/joiner.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4180,
+						"buffer_size": 8357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3480,
-								3480
+								1177,
+								1177
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"history_list_is_closing": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 391.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										128,
+										135
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 0,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								601
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1936,6 +2023,34 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"index.html"
+			],
+			[
+				"shder",
+				"src\\shader_source.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"sty",
+				"style.css"
+			],
+			[
+				"eng",
+				"src\\engine.js"
+			],
+			[
+				"pro",
+				"project.sublime-project"
+			],
+			[
+				"e",
+				"src\\engine.js"
+			],
+			[
 				"css",
 				"style.css"
 			],
@@ -1956,16 +2071,8 @@
 				"src\\first_person.js"
 			],
 			[
-				"inde",
-				"index.html"
-			],
-			[
 				"geo",
 				"src\\geometry.js"
-			],
-			[
-				"eng",
-				"src\\engine.js"
 			],
 			[
 				"joi",
@@ -1994,10 +2101,6 @@
 			[
 				"sh",
 				"src\\shader_source.js"
-			],
-			[
-				"in",
-				"index.html"
 			],
 			[
 				"index",
@@ -2030,10 +2133,6 @@
 			[
 				"main",
 				"main.cpp"
-			],
-			[
-				"pro",
-				"project.sublime-project"
 			],
 			[
 				"tree",
@@ -2150,10 +2249,6 @@
 			[
 				"dra",
 				"src\\core\\drawing.h"
-			],
-			[
-				"e",
-				"engine.cpp"
 			],
 			[
 				"data",

@@ -67,8 +67,10 @@ function initialize() {
 }
 
 function mainLoop() {
-  update();
-  draw();
+  if (isFocused) {
+    update();
+    draw();
+  }
   //window.setTimeout(mainLoop, 1000 / 60);
   requestAnimationFrame(mainLoop);
 }
@@ -100,9 +102,15 @@ function createProgram(vertexSource, fragmentSource) {
   return program;
 }
 
+var isFocused = true;
 var input_list = [];
 var touch_position = [0, 0];
 function createListeners() {
+  document.addEventListener('focus', event => { 
+    isFocused = true; 
+  });
+  document.addEventListener('blur', event => { isFocused = false; });
+
   gl.canvas.addEventListener("touchstart", event => {
     if (event.touches[0].clientX < gl.canvas.offsetLeft + (gl.canvas.width / 4)) { touch_position[0] = -1; }
     if (event.touches[0].clientX > gl.canvas.offsetLeft + (gl.canvas.width * (3 / 4))) { touch_position[0] = 1; }

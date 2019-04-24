@@ -582,10 +582,10 @@
 			}
 		},
 		{
-			"contents": "Searching 11 files for \"foreach\" (regex)\n\nC:\\Projects\\Mood-Web\\src\\data_parse.js:\n   23  \tvar colors = [];\n   24  \n   25: \tdata.forEach(color => {\n   26  \t\tcolors.push(parseFloat(color));\n   27  \t});\n\n1 match in 1 file\n",
+			"contents": "Searching 11 files for \"foreach\" (regex)\n\nC:\\Projects\\Mood-Web\\src\\data_parse.js:\n   23  \tvar colors = [];\n   24  \n   25: \tdata.forEach(color => {\n   26  \t\tcolors.push(parseFloat(color));\n   27  \t});\n\n1 match in 1 file\n\n\nSearching 11 files for \"loading-text\" (regex)\n\nC:\\Projects\\Mood-Web\\index.html:\n   21          </div>\n   22      </nav>\n   23:     <h1 id=\"loading-text\">Loading Textures...</h1>\n   24  \t<canvas id=\"glCanvas\" width=\"0\" height=\"300\">\n   25          Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.\n\nC:\\Projects\\Mood-Web\\src\\engine.js:\n   16    textureSheet.src = \"res/texture_sheet.png\";\n   17    textureSheet.addEventListener('load', function() {\n   18:     document.getElementById(\"loading-text\").remove();\n   19      initialize();\n   20  \n\n2 matches across 2 files\n",
 			"settings":
 			{
-				"buffer_size": 219,
+				"buffer_size": 824,
 				"line_ending": "Windows",
 				"name": "Find Results",
 				"scratch": true
@@ -1535,6 +1535,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"loading-text",
 			"foreach",
 			"uniform1f",
 			"scalemin",
@@ -1661,8 +1662,7 @@
 			"color",
 			"wallBuffer",
 			"wallDrawObject",
-			"'",
-			"int"
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1680,7 +1680,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1696,8 +1696,8 @@
 						"selection":
 						[
 							[
-								70,
-								70
+								1207,
+								1063
 							]
 						],
 						"settings":
@@ -1706,10 +1706,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 559.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1738,7 +1738,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1754,8 +1754,8 @@
 						"selection":
 						[
 							[
-								289,
-								289
+								124,
+								124
 							]
 						],
 						"settings":
@@ -1768,7 +1768,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1784,8 +1784,8 @@
 						"selection":
 						[
 							[
-								1403,
-								1403
+								1511,
+								1511
 							]
 						],
 						"settings":
@@ -1795,10 +1795,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 235.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1826,7 +1826,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1885,7 +1885,7 @@
 						"translation.y": 391.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1893,7 +1893,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 219,
+						"buffer_size": 824,
 						"regions":
 						{
 							"match":
@@ -1904,6 +1904,14 @@
 									[
 										128,
 										135
+									],
+									[
+										360,
+										372
+									],
+									[
+										740,
+										752
 									]
 								],
 								"scope": ""
@@ -1912,15 +1920,15 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								751,
+								751
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 1,
+							"output_tag": 2,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ \t].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -1928,10 +1936,10 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 157.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -2023,16 +2031,20 @@
 		"selected_items":
 		[
 			[
+				"css",
+				"style.css"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
 				"in",
 				"index.html"
 			],
 			[
 				"shder",
 				"src\\shader_source.js"
-			],
-			[
-				"inde",
-				"index.html"
 			],
 			[
 				"sty",
@@ -2049,10 +2061,6 @@
 			[
 				"e",
 				"src\\engine.js"
-			],
-			[
-				"css",
-				"style.css"
 			],
 			[
 				"sha",

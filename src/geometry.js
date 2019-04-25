@@ -118,10 +118,10 @@ function getTextureCoordinates(index) {
 	var x = parseInt(index % 10);
 	var y = parseInt(index / 10);
 
-	coordinates.push(x * .1);
-	coordinates.push((x * .1) + .1);
-	coordinates.push(y * .2);
-	coordinates.push((y * .2) + .2);
+	coordinates.push((x * .1) + .0005);
+	coordinates.push(((x * .1) + .1) - .0005);
+	coordinates.push((y * .2) + .0005);
+	coordinates.push(((y * .2) + .2) - .0005);
 
 	return coordinates;
 }

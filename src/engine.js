@@ -13,7 +13,7 @@ var texture;
 
 function initializeTextures() {
   textureSheet = new Image();
-  textureSheet.src = "res/texture_sheet.png";
+  textureSheet.src = "res/texture_sheet_2.png";
   textureSheet.addEventListener('load', function() {
     document.getElementById("loading-text").remove();
     initialize();

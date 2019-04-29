@@ -9,7 +9,7 @@ const VERTEX_SHADER_1 = [
 '	vec2 zeroToTwo = zeroToOne * 2.0;					 											\n',
 '	vec2 clipSpace = zeroToTwo - 1.0;					 											\n',
 '														 											\n',
-'	gl_Position = vec4(clipSpace * vec2(1, -1) * scaleWindow, 0, 1);	 											\n',
+'	gl_Position = vec4(clipSpace * vec2(1, -1) * scaleWindow, 0, 1);	 							\n',
 '}														 											\n',
 ].join('');
 
@@ -37,7 +37,7 @@ const VERTEX_SHADER_2 = [
 '	vec2 zeroToTwo = zeroToOne * 2.0;					 											\n',
 '	vec2 clipSpace = zeroToTwo - 1.0;					 											\n',
 '														 											\n',
-'	gl_Position = vec4(clipSpace * vec2(1, -1) * scaleWindow, 0, 1);	 											\n',
+'	gl_Position = vec4(clipSpace * vec2(1, -1) * scaleWindow, 0, 1);	 							\n',
 '	v_texture = a_texture;																			\n',
 '}														 											\n',
 ].join('');

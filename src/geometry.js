@@ -111,7 +111,6 @@ function Rectangle(x, y, width, height, color = [255,0,0,255]) {
 }
 
 //10x5
-
 function getTextureCoordinates(index) {
 	var coordinates = [];
 
@@ -202,6 +201,7 @@ function QuadTextured(pointA, pointB, pointC, pointD, index) {
 
 	this.resolutionLocation = gl.getUniformLocation(this.program, 'resolution');
 	this.scaleWindowLocation = gl.getUniformLocation(this.program, 'scaleWindow');
+
 	this.positionBuffer = gl.createBuffer();
 	this.textureBuffer = gl.createBuffer();
 
@@ -219,9 +219,11 @@ function QuadTextured(pointA, pointB, pointC, pointD, index) {
 		gl.vertexAttribPointer(this.textureAttributeLocation, 2, gl.FLOAT, false, 0, 0);
 
 		gl.bindTexture(gl.TEXTURE_2D, texture);
+
 		gl.uniform2f(this.resolutionLocation, gl.canvas.width, gl.canvas.height);
 		gl.uniform1f(this.scaleWindowLocation, scaleMin);
 		gl.uniform1i(this.textureLocation, 0);
+		
 		gl.drawArrays(gl.TRIANGLES, 0, 6);
 	}
 

@@ -523,7 +523,7 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 2231,
+				"buffer_size": 2288,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -532,7 +532,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 15605,
+				"buffer_size": 15737,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -541,7 +541,7 @@
 			"file": "src/geometry.js",
 			"settings":
 			{
-				"buffer_size": 10514,
+				"buffer_size": 10558,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -559,7 +559,8 @@
 			"file": "src/shader_source.js",
 			"settings":
 			{
-				"buffer_size": 4180,
+				"buffer_size": 4172,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -1678,7 +1679,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1687,15 +1688,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2231,
+						"buffer_size": 2288,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1547,
-								1547
+								707,
+								707
 							]
 						],
 						"settings":
@@ -1704,10 +1705,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 848.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1716,15 +1717,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15605,
+						"buffer_size": 15737,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2146,
-								2150
+								4566,
+								4566
 							]
 						],
 						"settings":
@@ -1734,10 +1735,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1746,15 +1747,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10514,
+						"buffer_size": 10558,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								3526,
+								3526
 							]
 						],
 						"settings":
@@ -1763,10 +1764,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1396.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1782,8 +1783,8 @@
 						"selection":
 						[
 							[
-								323,
-								323
+								123,
+								123
 							]
 						],
 						"settings":
@@ -1793,10 +1794,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 94.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1805,15 +1806,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4180,
+						"buffer_size": 4172,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								832,
-								832
+								1227,
+								1227
 							]
 						],
 						"settings":
@@ -1821,10 +1822,10 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1853,7 +1854,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1921,7 +1922,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2231,
+						"buffer_size": 2288,
 						"regions":
 						{
 						},
@@ -2004,19 +2005,27 @@
 		"selected_items":
 		[
 			[
-				"firs",
-				"src\\first_person.js"
-			],
-			[
-				"inde",
-				"index.html"
-			],
-			[
 				"css",
 				"style.css"
 			],
 			[
 				"in",
+				"index.html"
+			],
+			[
+				"shader",
+				"src\\shader_source.js"
+			],
+			[
+				"geo",
+				"src\\geometry.js"
+			],
+			[
+				"firs",
+				"src\\first_person.js"
+			],
+			[
+				"inde",
 				"index.html"
 			],
 			[
@@ -2050,10 +2059,6 @@
 			[
 				"shad",
 				"src\\shader_source.js"
-			],
-			[
-				"geo",
-				"src\\geometry.js"
 			],
 			[
 				"joi",
@@ -2098,10 +2103,6 @@
 			[
 				"engi",
 				"src\\engine.js"
-			],
-			[
-				"shader",
-				"public_html\\src\\shader_source.js"
 			],
 			[
 				"pr",

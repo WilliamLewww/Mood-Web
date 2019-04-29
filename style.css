@@ -26,6 +26,10 @@ canvas {
 	background-color: #6495ED;
 }
 
+.background-color-black {
+	background-color: #000000;
+}
+
 .background-color-enabled {
 	border-style: dotted;
 	margin-left: 8px;

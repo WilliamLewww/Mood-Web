@@ -520,19 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 2288,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 15737,
+				"buffer_size": 15836,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -586,6 +577,15 @@
 			"settings":
 			{
 				"buffer_size": 8357,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 2288,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -1388,11 +1388,11 @@
 	],
 	"file_history":
 	[
+		"/C/Projects/Mood-Web/style.css",
 		"/C/Projects/Mood-Web/src/shader_source.js",
 		"/C/Projects/Mood-Web/index.html",
 		"/C/Projects/Mood-Web/src/first_person.js",
 		"/C/Projects/Mood-Web/project.sublime-project",
-		"/C/Projects/Mood-Web/style.css",
 		"/C/Projects/Mood-Web/src/geometry.js",
 		"/C/Users/William/AppData/Local/Temp/citation-13430184.txt",
 		"/C/Users/William/AppData/Local/Temp/citation-271383193.bib.txt",
@@ -1679,53 +1679,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								707,
-								707
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15737,
+						"buffer_size": 15836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4566,
-								4566
+								233,
+								163
 							]
 						],
 						"settings":
@@ -1742,7 +1713,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "src/geometry.js",
 					"semi_transient": false,
 					"settings":
@@ -1754,8 +1725,8 @@
 						"selection":
 						[
 							[
-								3526,
-								3526
+								10558,
+								10558
 							]
 						],
 						"settings":
@@ -1764,14 +1735,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1396.0,
+						"translation.y": 3959.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "src/engine.js",
 					"semi_transient": false,
 					"settings":
@@ -1783,8 +1754,8 @@
 						"selection":
 						[
 							[
-								123,
-								123
+								1219,
+								1219
 							]
 						],
 						"settings":
@@ -1794,14 +1765,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "src/shader_source.js",
 					"semi_transient": false,
 					"settings":
@@ -1825,11 +1796,11 @@
 						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "src/first_person.js",
 					"semi_transient": false,
 					"settings":
@@ -1858,7 +1829,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "src/third_person.js",
 					"semi_transient": false,
 					"settings":
@@ -1870,8 +1841,8 @@
 						"selection":
 						[
 							[
-								2331,
-								2343
+								421,
+								421
 							]
 						],
 						"settings":
@@ -1883,11 +1854,11 @@
 						"translation.y": 130.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "src/joiner.js",
 					"semi_transient": false,
 					"settings":
@@ -1917,7 +1888,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 0,
+					"buffer": 7,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
@@ -1929,8 +1900,8 @@
 						"selection":
 						[
 							[
-								650,
-								601
+								677,
+								677
 							]
 						],
 						"settings":
@@ -1942,7 +1913,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1950,7 +1921,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1995,7 +1966,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2004,6 +1975,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ind",
+				"index.html"
+			],
 			[
 				"css",
 				"style.css"
@@ -2090,10 +2065,6 @@
 			],
 			[
 				"index",
-				"index.html"
-			],
-			[
-				"ind",
 				"index.html"
 			],
 			[

@@ -70,7 +70,9 @@ canvas {
 	border-style: ridge;
 	border-width: 8px;
 	margin-top: -5px;
-	background-color: #c9dcff ;
+	background-color: #c9dcff;
+	width: 75vw;
+	margin: auto;
 }
 
 .instruction-text {
